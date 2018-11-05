@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+}
+
+.top-bar {
+    background-color: red;
+
+}
+.top-bar-inner{
+
+}
+.mid-bar {
+    background-color: blue;
+}
+.bottom-bar {
+    background-color: green;
+}
