@@ -20,10 +20,22 @@
 .dropdown .dropdown-menu {
     transition: all 0.3s;
     overflow: hidden;
-    transform-origin: 10% 10%;
+    transform-origin: top;
     transform: scale(1, 0);
     display: block;
+    margin: 0;
 }
 .dropdown:hover .dropdown-menu {
     transform: scale(1);
+}
+/*Bootstrat dropdown menu animation*/
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
 }
