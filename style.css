@@ -15,3 +15,15 @@
 .bottom-bar {
     background-color: green;
 }
+
+/*Bootstrat dropdown menu animation*/
+.dropdown .dropdown-menu {
+    transition: all 0.3s;
+    overflow: hidden;
+    transform-origin: 10% 10%;
+    transform: scale(1, 0);
+    display: block;
+}
+.dropdown:hover .dropdown-menu {
+    transform: scale(1);
+}
