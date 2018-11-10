@@ -16,17 +16,6 @@
     background-color: green;
 }
 
-/*Bootstrat dropdown menu animation*/
-.dropdown .dropdown-menu {
-    transition: all 0.3s;
-    overflow: hidden;
-    transform-origin: top;
-    transform: scale(1, 0);
-    display: block;
-    margin: 0;
+.nav-pills .nav-link {
+    border-radius: 0;
 }
-.dropdown:hover .dropdown-menu {
-    transform: scale(1);
-}
-/*Bootstrat dropdown menu animation*/
-

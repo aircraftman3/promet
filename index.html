@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <title>Promet Service</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
     <script src="main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -47,32 +54,32 @@
         </div>
     </div>
     <div class="bottom-bar">
-        <div>
-            <nav>
-                <ul class="nav nav-pills">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Link1</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Link2</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Podlink 2.1</a>
-                            <a class="dropdown-item" href="#">Podlink 2.2</a>
-                            <a class="dropdown-item" href="#">Podlink 2.3</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Podlink odseparowany 2.4</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link3</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Link4</a>
-                    </li>
-                </ul>
-            </nav>
+        <nav class="bottom-bar-inner">
+            <ul class="nav nav-pills" >
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="dropdown" href="#" role="button"
+                       aria-haspopup="true" aria-expanded="false">Action</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#" role="button"
+                       aria-haspopup="true" aria-expanded="false">Action2</a>
+                    <ul class="dropdown-menu" style="margin-top: 0px">
+                        <li><a class="dropdown-item clearfix" href="javascript:;">Action</a></li>
+                        <li><a class="dropdown-item" href="javascript:;">Another action</a></li>
+                        <li><a class="dropdown-item" href="javascript:;">Something else here</a></li>
+                        <li class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="javascript:;">Separated link</a></li>
+                    </ul>
 
-        </div>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Disabled</a>
+                </li>
+            </ul>
+        </nav>
     </div>
 </header>
 <main>
@@ -83,7 +90,18 @@
 
 </footer>
 <script>
-
+  $(".dropdown-toggle").on("mouseenter", function () {
+    // make sure it is not shown:
+    if (!$(this).parent().hasClass("show")) {
+      $(this).click();
+    }
+  });
+  $(".nav-item, .dropdown").on("mouseleave", function () {
+    // make sure it is shown:
+    if ($(this).hasClass("show")) {
+      $(this).children('.dropdown-toggle').first().click();
+    }
+  });
 </script>
 </body>
 </html>
