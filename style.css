@@ -16,6 +16,21 @@
     background-color: green;
 }
 
-.nav-pills .nav-link {
-    border-radius: 0;
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu > a.dropdown-item:after {
+    font-family: FontAwesome;
+    content: "\f054";
+    float: right;
+}
+.dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: 0;
+    margin-left: 0;
+}
+.dropdown-submenu:hover > .dropdown-menu {
+    display: block;
 }
