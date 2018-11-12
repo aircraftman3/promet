@@ -34,3 +34,11 @@
 .dropdown-submenu:hover > .dropdown-menu {
     display: block;
 }
+
+.nav-link {
+    padding: 1.5rem 1rem;
+}
+
+.dropdown-menu {
+    margin-top: 0;
+}
