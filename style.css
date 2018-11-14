@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 * {
     margin: 0;
+    font-family: "Montserrat", Helvetica, sans-serif;
+
 }
 a {
     color: inherit;
@@ -23,22 +27,33 @@ ul {
     margin: 0 auto;
     background-color: #1e1f20;
 }
+.social-media-icons {
+    font-size: 17px;
+}
 .social-media-icons li {
     display: inline;
     list-style-type: none;
 }
 .social-media-icons a {
-    color: #646464;
+    color: #515151;
 }
+
 .top-bar-inner-left {
     padding-top: 20px;
     padding-bottom: 20px;
 }
 .top-bar-inner-left span {
+
+    font-size: 15px;
+font-weight: 600;
+
     color:  white;
     padding-left: 20px;
+    padding-right: 20px;
 }
-.top-bar-inner-left a {
+.top-bar-inner-left > a {
+    font-size: 15px;
+    padding-right: 10px;
     color: #af0000;
 }
 
