@@ -1,17 +1,44 @@
 * {
     margin: 0;
 }
+a {
+    color: inherit;
+}
+
+ul {
+    margin: 0;
+    padding:0;
+}
+/*top bar*/
 
 .top-bar {
     background-color: red;
     width: 100%
 }
 .top-bar-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
     max-width: 1170px;
     margin: 0 auto;
     background-color: #830000;
+}
+.social-media-icons li{
+    display: inline;
+    list-style-type: none;
+}
+
+.social-media-icons {
 
 }
+
+
+
+
+
+/*top bar*/
+/*mid bar*/
+
 .mid-bar {
     background-color: blue;
     width: 100%
@@ -20,8 +47,12 @@
     max-width: 1170px;
     margin: 0 auto;
     background-color: #000070;
-
 }
+
+/*mid bar*/
+/*bottom bar(manu navbar)*/
+
+
 .bottom-bar {
     background-color: green;
     width: 100%;
@@ -72,3 +103,6 @@
 }
 
 /*bootstrap dropdown menu overrides*/
+
+
+/*bottom bar(manu navbar)*/
