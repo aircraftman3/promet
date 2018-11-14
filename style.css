@@ -7,30 +7,41 @@ a {
 
 ul {
     margin: 0;
-    padding:0;
+
 }
 /*top bar*/
 
 .top-bar {
-    background-color: red;
+    background-color: #1e1f20;
     width: 100%
 }
-.top-bar-inner{
+.top-bar-inner {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     max-width: 1170px;
     margin: 0 auto;
-    background-color: #830000;
+    background-color: #1e1f20;
 }
-.social-media-icons li{
+.social-media-icons li {
     display: inline;
     list-style-type: none;
 }
-
-.social-media-icons {
-
+.social-media-icons a {
+    color: #646464;
 }
+.top-bar-inner-left {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.top-bar-inner-left span {
+    color:  white;
+    padding-left: 20px;
+}
+.top-bar-inner-left a {
+    color: #af0000;
+}
+
 
 
 
