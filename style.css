@@ -131,4 +131,21 @@ font-weight: 600;
 /*bootstrap dropdown menu overrides*/
 
 
+
+.nav-link {
+    font-size: 22px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    }
+
+
+/*font-size: 15px;*/
+
+
+
+
+
+
 /*bottom bar(manu navbar)*/
