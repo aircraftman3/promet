@@ -5,6 +5,8 @@
     font-family: "Montserrat", Helvetica, sans-serif;
 
 }
+
+
 a {
     color: inherit;
 }
@@ -36,6 +38,9 @@ ul {
 }
 .social-media-icons a {
     color: #515151;
+}
+.social-media-icons a:hover {
+    color: #af0000;
 }
 
 .top-bar-inner-left {
@@ -98,7 +103,7 @@ font-weight: 600;
     position: relative;
 }
 
-/*arrow in submenu*/
+/*!*arrow in submenu*!*/
 /*.dropdown-submenu > a.dropdown-item:after {*/
     /*font-family: FontAwesome;*/
     /*content: "\f054";*/
@@ -107,9 +112,10 @@ font-weight: 600;
 
 .dropdown-submenu > .dropdown-menu {
     top: 0;
-    left: 100%;
+    left: 150%;
     margin-top: 0;
     margin-left: 0;
+
 }
 .dropdown-submenu:hover > .dropdown-menu {
     display: block;
@@ -123,6 +129,10 @@ font-weight: 600;
 
 .dropdown-menu {
     margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: 0;
+
 }
 .nav-pills .nav-link {
     border-radius: 0
@@ -134,15 +144,31 @@ font-weight: 600;
 
 .nav-link {
     font-size: 22px;
+    font-weight: 600;
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    }
+}
+.dropdown-item {
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #af0000;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 150%;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #af0000;
+}
 
-
-/*font-size: 15px;*/
-
+.nav-link:focus {
+    outline: none;
+}
+.nav-link:hover {
+    color: #fff;
+    background-color: #af0000;
+}
 
 
 
