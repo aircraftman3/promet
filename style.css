@@ -18,7 +18,7 @@ ul {
 /*top bar*/
 
 .top-bar {
-    background-color: #1e1f20;
+    background-color: #000000;
     width: 100%
 }
 .top-bar-inner {
@@ -112,7 +112,7 @@ font-weight: 600;
 
 .dropdown-submenu > .dropdown-menu {
     top: 0;
-    left: 150%;
+    left: 170%;
     margin-top: 0;
     margin-left: 0;
 
@@ -143,10 +143,12 @@ font-weight: 600;
 
 
 .nav-link {
+
     font-size: 22px;
     font-weight: 600;
     padding-left: 30px;
     padding-right: 30px;
+    transition: 0.8s ease;
 }
 .dropdown-item {
     font-size: 15px;
@@ -155,7 +157,7 @@ font-weight: 600;
     background-color: #af0000;
     padding-top: 15px;
     padding-bottom: 15px;
-    width: 150%;
+    width: 170%;
 }
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: #fff;
