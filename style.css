@@ -135,7 +135,10 @@ font-weight: 600;
 
 }
 .nav-pills .nav-link {
-    border-radius: 0
+    border-right-style: solid;
+
+    border-width: thin;
+    border-radius: 0;
 }
 
 /*bootstrap dropdown menu overrides*/
@@ -179,11 +182,16 @@ font-weight: 600;
 /*bottom bar(manu navbar)*/
 
 /*main**********************************/
-
 .main {
+    height: 600px;
+    width: 100%;
+}
+
+
+.image-slider {
     position: relative;
     background-image: url(./images/slider1.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
+    background-size: contain;
+    height: 100%;
 }
