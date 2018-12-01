@@ -10,3 +10,4 @@ $(".nav-item, .dropdown").on("mouseleave", function () {
     $(this).children('.dropdown-toggle').first().click();
   }
 });
+
