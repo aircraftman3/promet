@@ -8,6 +8,7 @@
 
 
 
+
 a {
     color: inherit;
 }
@@ -88,12 +89,15 @@ font-weight: 600;
 .bottom-bar {
     background-color: green;
     width: 100%;
+
 }
 .bottom-bar-inner {
-
+    position: sticky;
+    top: 10px;
     max-width: 1170px;
     margin: 0 auto;
     background-color: #004300;
+    z-index: 1;
 }
 
 
@@ -177,8 +181,15 @@ font-weight: 600;
     background-color: #af0000;
 }
 
+/*image slider*/
+
+.carousel-indicators li {
+    height: 9px;
+    border-radius: 2px;
+}
 
 
+/*!*image slider*!*/
 
 
 /*bottom bar(manu navbar)*/
