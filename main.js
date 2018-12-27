@@ -11,3 +11,4 @@ $(".nav-item, .dropdown").on("mouseleave", function () {
   }
 });
 
+$('.section4').parallax({imageSrc: '/images/slider1.jpg'});

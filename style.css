@@ -252,17 +252,36 @@ font-weight: 600;
 }
 .section4 {
     width: 100%;
-    background-color: #2f0000;
+
     height: 600px;
+    min-height: 400px;
+    background: transparent;
 }
 .section4-inner{
     max-width: 1170px;
-    background-color: #063106;
+    background: transparent;
     margin: 0 auto;
     height: 100%;
 }
+
+
+
 .map {
     width: 100%;
     background-color: #d31a71;
     height: 400px;
+}
+
+.footer {
+    width: 100%;
+
+    height: 50px;
+
+    background: black;
+}
+.footer-inner{
+    max-width: 1170px;
+    background: brown;
+    margin: 0 auto;
+    height: 100%;
 }
