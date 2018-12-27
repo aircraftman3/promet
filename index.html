@@ -64,41 +64,43 @@
         </div>
     </div>
     <div class="bottom-bar">
-        <nav class="bottom-bar-inner">
-            <ul class="nav nav-pills">
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="dropdown" href="#" role="button"
-                       aria-haspopup="true" aria-expanded="false">Menu 1</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                       aria-haspopup="true" aria-expanded="false">Menu 2</a>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-submenu">
-                            <a class="dropdown-item" tabindex="-1" href="javascript:;">Menu 2.1</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item dropdown-item2" tabindex="-1" href="javascript:;">Menu
-                                    2.1.1</a></li>
-                                <li><a class="dropdown-item dropdown-item2" tabindex="-1" href="javascript:;">Menu
-                                    2.1.2</a></li>
-                                <li><a class="dropdown-item dropdown-item2" tabindex="-1" href="javascript:;">Menu
-                                    2.1.3</a></li>
-                            </ul>
-                        </li>
-                        <li><a class="dropdown-item" href="javascript:;">Menu 2.2</a></li>
-                        <li><a class="dropdown-item" href="javascript:;">Menu 2.3</a></li>
-                        <li><a class="dropdown-item" href="javascript:;">Menu 2.4</a></li>
-                    </ul>
+        <div class="sticky-class">
+            <nav class="bottom-bar-inner" id="navbar">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="dropdown" href="#" role="button"
+                           aria-haspopup="true" aria-expanded="false">Menu 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                           aria-haspopup="true" aria-expanded="false">Menu 2</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item" tabindex="-1" href="javascript:;">Menu 2.1</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item dropdown-item2" tabindex="-1" href="javascript:;">Menu
+                                        2.1.1</a></li>
+                                    <li><a class="dropdown-item dropdown-item2" tabindex="-1" href="javascript:;">Menu
+                                        2.1.2</a></li>
+                                    <li><a class="dropdown-item dropdown-item2" tabindex="-1" href="javascript:;">Menu
+                                        2.1.3</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="javascript:;">Menu 2.2</a></li>
+                            <li><a class="dropdown-item" href="javascript:;">Menu 2.3</a></li>
+                            <li><a class="dropdown-item" href="javascript:;">Menu 2.4</a></li>
+                        </ul>
 
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#">Menu 3</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Menu 4</a>
-                </li>
-            </ul>
-        </nav>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Menu 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Menu 4</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </div>
 </header>
 <main>
@@ -185,6 +187,27 @@
     </div>
 </footer>
 <script>
+  // When the user scrolls the page, execute myFunction
+  window.onscroll = function () {
+    myFunction()
+  };
+
+  // Get the navbar
+  var navbar = document.getElementById("navbar");
+
+  // Get the offset position of the navbar
+  var sticky = navbar.offsetTop;
+
+  // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+
+
   $(".dropdown-toggle").on("mouseenter", function () {
     // make sure it is not shown:
     if (!$(this).parent().hasClass("show")) {
