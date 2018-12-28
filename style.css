@@ -122,7 +122,8 @@ ul {
     max-width: 1170px;
     margin: 0 auto;
     background-color: #004300;
-    z-index: 1;
+
+    z-index: 16;
 }
 
 .sticky {
@@ -130,12 +131,13 @@ ul {
     position: fixed;
     top: 0;
     width: 100%;
-    left: 0;
-    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
 
 }
 
-.sticky-class {
+.sticky-container {
     height: 81px;
 }
 
