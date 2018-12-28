@@ -99,8 +99,8 @@ ul {
 }
 
 .mid-bar-inner-phone:hover {
-    transition: all .2s ease-in-out;
-    transform: scale(1.2);
+    transition: all .3s ease-in-out;
+    transform: scale(1.1);
 }
 
 .mid-bar-inner-phone i {
@@ -117,7 +117,6 @@ ul {
 }
 
 .bottom-bar-inner {
-    overflow: hidden;
 
     top: 10px;
     max-width: 1170px;
@@ -127,10 +126,13 @@ ul {
 }
 
 .sticky {
+
     position: fixed;
     top: 0;
     width: 100%;
-    left: 9%;
+    left: 0;
+    right: 0;
+
 }
 
 .sticky-class {
