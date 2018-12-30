@@ -18,7 +18,7 @@ ul {
 /*top bar*/
 
 .top-bar {
-    background-color: #000000;
+    background-color: #1e1f20;
     width: 100%
 }
 
@@ -73,7 +73,7 @@ ul {
 /*mid bar*/
 
 .mid-bar {
-    background-color: blue;
+    background-color: #cbc9c9;
     width: 100%
 }
 
@@ -82,11 +82,11 @@ ul {
     justify-content: space-between;
     max-width: 1170px;
     margin: 0 auto;
-    background-color: #000070;
+    background-color: #cbc9c9;
 }
 
 .mid-bar-inner-phone {
-    color: white;
+    color: #af0000;
     font-weight: 900;
     display: flex;
     align-items: center;
@@ -111,7 +111,7 @@ ul {
 /*bottom bar(manu navbar)*/
 
 .bottom-bar {
-    background-color: green;
+    background-color: #cbc9c9;
     width: 100%;
 
 }
@@ -121,7 +121,7 @@ ul {
     top: 10px;
     max-width: 1170px;
     margin: 0 auto;
-    background-color: #004300;
+    background-color: #af0000;
 
     z-index: 16;
 }
@@ -183,8 +183,18 @@ ul {
 .nav-pills .nav-link {
     border-right-style: solid;
 
+
     border-width: thin;
     border-radius: 0;
+
+
+}
+
+#navbar {
+    border-bottom-style: solid;
+    border-width: 5px;
+    box-shadow: #1cb51b;
+
 }
 
 /*bootstrap dropdown menu overrides*/
@@ -222,6 +232,14 @@ ul {
     background-color: #af0000;
 }
 
+.nav + .nav-pills {
+    border-style: solid;
+
+    border-bottom-color: #000;
+}
+
+
+
 /*image slider*/
 
 .carousel-indicators li {
@@ -230,7 +248,8 @@ ul {
 }
 
 .image-slider {
-
+    position: relative;
+    z-index: -1;
     width: 100%;
 }
 
