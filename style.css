@@ -15,6 +15,7 @@ ul {
 
 }
 
+
 /*top bar*/
 
 .top-bar {
@@ -120,8 +121,9 @@ ul {
 
     top: 10px;
     max-width: 1170px;
+
     margin: 0 auto;
-    background-color: #af0000;
+    background-color: darkred;
 
     z-index: 16;
 }
@@ -236,7 +238,7 @@ ul {
 
 .dropdown-menu li:hover > a {
     color: white;
-    background-color: #af0000;
+    background-color: darkred;
 }
 
 .nav-link:focus {
@@ -270,14 +272,14 @@ ul {
 .section2 {
 
     width: 100%;
-    background-color: darkred;
+    background-color: #e3e1e1;
     height: 500px;
 }
 
 .section2-inner {
 
     max-width: 1170px;
-    background-color: #1cb51b;
+    background-color: #e3e1e1;
     height: 100%;
     margin: 0 auto;
 }
@@ -305,13 +307,13 @@ ul {
 
 .section3 {
     width: 100%;
-    background-color: #640000;
+    background-color: #2d2c2c;
     height: 400px;
 }
 
 .section3-inner {
     max-width: 1170px;
-    background-color: #146914;
+    background-color: #2d2c2c;
     margin: 0 auto;
     height: 100%;
 }
@@ -342,12 +344,16 @@ ul {
 
     height: 50px;
 
-    background: black;
+    background: #1e1f20;
+}
+
+.footer p {
+    color: white;
 }
 
 .footer-inner {
     max-width: 1170px;
-    background: brown;
+    background: #1e1f20;
     margin: 0 auto;
     height: 100%;
 }
