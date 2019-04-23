@@ -15,7 +15,6 @@ ul {
 
 }
 
-
 /*top bar*/
 
 .top-bar {
@@ -70,8 +69,8 @@ ul {
     color: #af0000;
 }
 
-/*top bar*/
-/*mid bar*/
+/*top bar**********************************/
+/*mid bar**********************************/
 
 .mid-bar {
     background-color: #e3e1e1;
@@ -84,6 +83,22 @@ ul {
     max-width: 1170px;
     margin: 0 auto;
     background-color: #e3e1e1;
+}
+
+.mid-bar-inner-left {
+display: flex;
+    justify-content: flex-start;
+}
+
+
+
+.mid-bar-inner-name {
+
+}
+
+.mid-bar-inner-logo {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .mid-bar-inner-phone {
