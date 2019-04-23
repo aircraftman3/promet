@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900');
 * {
     margin: 0;
     font-family: "Montserrat", Helvetica, sans-serif;
@@ -86,12 +85,36 @@ ul {
 }
 
 .mid-bar-inner-left {
-display: flex;
+    display: flex;
     justify-content: flex-start;
+    align-items: baseline;
 }
 
+.mid-bar-inner-left p {
+    margin-bottom: 0;
+}
+
+.mid-bar-inner-left p>a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+#name-first-line {
+    font-size: 35px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 25%;
+
+}
+
+#name-second-line {
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
 
 
+
+}
 .mid-bar-inner-name {
 
 }
