@@ -1,3 +1,6 @@
+
+
+
 $(".dropdown-toggle").on("mouseenter", function () {
   // make sure it is not shown:
   if (!$(this).parent().hasClass("show")) {
@@ -11,4 +14,6 @@ $(".nav-item, .dropdown").on("mouseleave", function () {
   }
 });
 
-$('.section4').parallax({imageSrc: '/images/slider1.jpg'});
+
+
+
