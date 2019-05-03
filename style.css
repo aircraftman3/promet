@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900');
+
 * {
     margin: 0;
     font-family: "Montserrat", Helvetica, sans-serif;
@@ -26,6 +27,7 @@ ul {
     justify-content: space-between;
     align-items: baseline;
     max-width: 1170px;
+    width: 90%;
     margin: 0 auto;
     background-color: #1e1f20;
 }
@@ -73,13 +75,14 @@ ul {
 
 .mid-bar {
     background-color: #e3e1e1;
-    width: 100%
+    width: 100%;
 }
 
 .mid-bar-inner {
     display: flex;
     justify-content: space-between;
     max-width: 1170px;
+    width: 90%;
     margin: 0 auto;
     background-color: #e3e1e1;
 }
@@ -94,7 +97,7 @@ ul {
     margin-bottom: 0;
 }
 
-.mid-bar-inner-left p>a:hover {
+.mid-bar-inner-left p > a:hover {
     color: black;
     text-decoration: none;
 }
@@ -112,9 +115,8 @@ ul {
     font-weight: 600;
     text-transform: uppercase;
 
-
-
 }
+
 .mid-bar-inner-name {
 
 }
@@ -159,7 +161,7 @@ ul {
 
     top: 10px;
     max-width: 1170px;
-
+    width: 90%;
     margin: 0 auto;
     background-color: darkred;
 
@@ -297,8 +299,11 @@ ul {
 
 .image-slider {
     position: relative;
-
     width: 100%;
+}
+
+.carousel-indicators li:hover {
+    cursor: pointer;
 }
 
 /*!*image slider*!*/
@@ -394,4 +399,32 @@ ul {
     background: #1e1f20;
     margin: 0 auto;
     height: 100%;
+}
+
+/****************************************************************/
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    ...
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    ...
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /*.top-bar-inner {*/
+        /*width: 90%;*/
+    /*}*/
+    /*.mid-bar-inner {*/
+        /*width: 90%;*/
+    /*}*/
+    /*.bottom-bar-inner {*/
+        /*width: 90%;*/
+    /*}*/
 }
