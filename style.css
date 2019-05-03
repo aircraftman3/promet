@@ -172,7 +172,7 @@ ul {
 
     position: fixed;
     top: 0;
-    width: 100%;
+
     left: 50%;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
@@ -418,13 +418,5 @@ ul {
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    /*.top-bar-inner {*/
-        /*width: 90%;*/
-    /*}*/
-    /*.mid-bar-inner {*/
-        /*width: 90%;*/
-    /*}*/
-    /*.bottom-bar-inner {*/
-        /*width: 90%;*/
-    /*}*/
+
 }
