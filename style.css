@@ -25,6 +25,7 @@ ul {
 .top-bar-inner {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: baseline;
     max-width: 1170px;
     width: 90%;
@@ -81,6 +82,7 @@ ul {
 .mid-bar-inner {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     max-width: 1170px;
     width: 90%;
     margin: 0 auto;
@@ -90,6 +92,7 @@ ul {
 .mid-bar-inner-left {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
     align-items: baseline;
 }
 
@@ -117,9 +120,8 @@ ul {
 
 }
 
-.mid-bar-inner-name {
 
-}
+
 
 .mid-bar-inner-logo {
     padding-top: 20px;
@@ -297,11 +299,11 @@ ul {
     height: 100%;
     width: 0;
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 17; /* Sit on top */
     left: 0;
     top: 0;
-    background-color: rgb(0,0,0); /* Black fallback color */
-    background-color: rgba(0,0,0, 0.7); /* Black w/opacity */
+    background-color: rgb(0, 0, 0); /* Black fallback color */
+    background-color: rgba(0, 0, 0, 0.8); /* Black w/opacity */
     overflow-x: hidden; /* Disable horizontal scroll */
     transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
@@ -340,7 +342,10 @@ ul {
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
+    .overlay a {
+        font-size: 20px
+    }
+
     .overlay .closebtn {
         font-size: 40px;
         top: 15px;
@@ -349,7 +354,20 @@ ul {
 }
 
 #hamburger-menu {
+    padding-left: 5px;
+    padding-right: 5px;
+
+    color: white;
     display: none;
+    font-size: 25px;
+    cursor: pointer;
+
+}
+
+.hamburger-outer {
+    background-color: darkred;
+
+    padding-left: 10px;
 }
 
 /*Hamburger menu*/
@@ -358,6 +376,7 @@ ul {
 .carousel-indicators li {
     height: 9px;
     border-radius: 2px;
+
 }
 
 .image-slider {
@@ -466,29 +485,86 @@ ul {
 
 /****************************************************************/
 
-/*Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) {
-    ...
+@media (max-width: 424px) {
+    .top-bar-inner-left {
+        margin: 0 auto;
+    }
+    .social-media-icons {
+        padding:0;
+        margin: 0 auto;
+        padding-bottom: 10px;
+    }
+    #name-first-line {
+        font-size: 20px;
+    }
+    #name-second-line {
+        font-size: 15px;
+
+    }
+    .mid-bar-inner-phone {
+        margin: 0 auto;
+        padding-bottom: 10px;
+    }
+    .carousel-indicators li {
+        height: 6px;
+        border-radius: 2px;
+
+    }
 }
 
-/*Small devices (landscape phones, 576px and up)*/
-@media (max-width: 767.98px) {
+
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (min-width: 425px) and (max-width: 766px) {
+.top-bar-inner-left {
+    margin: 0 auto;
+}
+    .social-media-icons {
+        padding:0;
+        margin: 0 auto;
+        padding-bottom: 15px;
+    }
+
+    #name-first-line {
+        font-size: 30px;
+    }
+    #name-second-line {
+        font-size: 20px;
+
+    }
+    .mid-bar-inner-phone {
+        margin: 0 auto;
+        padding-bottom: 15px;
+    }
+    .carousel-indicators li {
+        height: 6px;
+        border-radius: 2px;
+
+    }
+
+
+
+}
+
+/*Small devices (landscape phones)*/
+@media (max-width: 767px) {
+
+
     .sticky-container {
-    display: none;}
-
-
-
-
+        display: none;
+    }
 
     #hamburger-menu {
-    display: inline;
-}
-}
-
-/*Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) and (max-width: 991.98px) {
-
-/*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) and (max-width: 1199.98px) {
+        display: inline;
+    }
 
 }
+
+/*!*Medium devices (tablets, 768px and up)*!*/
+/*@media (min-width: 768px) and (max-width: 991.98px) {*/
+/*}*/
+
+/*!*Large devices (desktops, 992px and up)*!*/
+/*@media (min-width: 992px) and (max-width: 1199.98px) {*/
+
+/*}*/
