@@ -167,7 +167,7 @@ ul {
     margin: 0 auto;
     background-color: darkred;
 
-    z-index: 16;
+    z-index: 1;
 }
 
 .sticky {
@@ -254,8 +254,7 @@ ul {
 }
 
 #first-menu-item {
-    background-color: white;
-    color: black;
+
 }
 
 .dropdown-item {
