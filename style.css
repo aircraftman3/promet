@@ -121,8 +121,6 @@ ul {
 }
 
 
-
-
 .mid-bar-inner-logo {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -397,7 +395,7 @@ ul {
 
     width: 100%;
     background-color: #e3e1e1;
-    height: 500px;
+    height: 100%
 }
 
 .section2-inner {
@@ -407,24 +405,55 @@ ul {
 }
 
 .section2-images {
-
-padding-top: 10px;
+    margin-bottom: 30px;
+    padding-top: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .section2-image {
+    box-shadow: 4px 11px 12px 0px rgba(0,0,0,0.62);
+    font-size: 12px;
+    max-height: 450px;
+    max-width: 250px;
     border-radius: 4px;
     border: lightgrey solid 1px;
     background-color: white;
+    overflow-wrap: break-word;
 }
+
+.section2-image h5 {
+
+    font-weight: bold;
+    padding-left: 10px;
+    padding-top: 10px;
+    color: darkred;
+}
+
+.section2-image p {
+    color: dimgrey;
+    padding-left: 10px;
+}
+
+.section2-image a {
+
+    font-weight: bold;
+
+
+}
+.section2-image a:hover {
+    background-color: darkred;
+    color: white;
+}
+
+
 
 .section2-image img {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
-    max-width: 300px;
+    max-width: 250px;
 }
-
 
 
 /*.section2-images {*/
@@ -507,22 +536,27 @@ padding-top: 10px;
     .top-bar-inner-left {
         margin: 0 auto;
     }
+
     .social-media-icons {
-        padding:0;
+        padding: 0;
         margin: 0 auto;
         padding-bottom: 10px;
     }
+
     #name-first-line {
         font-size: 20px;
     }
+
     #name-second-line {
         font-size: 15px;
 
     }
+
     .mid-bar-inner-phone {
         margin: 0 auto;
         padding-bottom: 10px;
     }
+
     .carousel-indicators li {
         height: 6px;
         border-radius: 2px;
@@ -531,14 +565,14 @@ padding-top: 10px;
 }
 
 
-
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (min-width: 425px) and (max-width: 766px) {
-.top-bar-inner-left {
-    margin: 0 auto;
-}
+    .top-bar-inner-left {
+        margin: 0 auto;
+    }
+
     .social-media-icons {
-        padding:0;
+        padding: 0;
         margin: 0 auto;
         padding-bottom: 15px;
     }
@@ -546,20 +580,22 @@ padding-top: 10px;
     #name-first-line {
         font-size: 30px;
     }
+
     #name-second-line {
         font-size: 20px;
 
     }
+
     .mid-bar-inner-phone {
         margin: 0 auto;
         padding-bottom: 15px;
     }
+
     .carousel-indicators li {
         height: 6px;
         border-radius: 2px;
 
     }
-
 
 
 }
