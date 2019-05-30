@@ -340,8 +340,6 @@ ul {
 }
 
 
-
-
 /* When the height of the screen is less than 450
 pixels, change the font-size of the links and position
  the close button again, so they don't overlap */
@@ -371,7 +369,7 @@ pixels, change the font-size of the links and position
 #hamburger-outer {
     display: none;
     background-color: darkred;
-height: 50px;
+    height: 50px;
     padding-left: 10px;
 }
 
@@ -540,29 +538,6 @@ height: 50px;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /****************************************************************/
 
 @media (max-width: 424px) {
@@ -616,7 +591,6 @@ height: 50px;
     .section2-images {
         margin-bottom: 0;
     }
-
 
 
     .carousel-indicators li {
@@ -681,7 +655,6 @@ height: 50px;
     .section2-images {
         margin-bottom: 0;
     }
-
 
 
     .carousel-indicators li {
