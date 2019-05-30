@@ -339,23 +339,19 @@ ul {
     font-size: 60px;
 }
 
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-@media screen and (max-height: 450px) {
-    .overlay a {
-        font-size: 20px
-    }
+/*.overlay a {*/
+/*    font-size: 20px*/
+/*}*/
 
-    .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
-}
+/*.overlay .closebtn {*/
+/*    font-size: 40px;*/
+/*    top: 15px;*/
+/*    right: 35px;*/
+/*}*/
 
 #hamburger-menu {
     padding-left: 5px;
     padding-right: 5px;
-
     color: white;
     display: none;
     font-size: 25px;
@@ -370,28 +366,7 @@ ul {
 }
 
 /*Hamburger menu*/
-/*image slider*/
 
-.carousel-indicators li {
-    height: 9px;
-    border-radius: 2px;
-
-}
-
-.image-slider {
-    position: relative;
-    width: 100%;
-}
-
-.carousel-indicators li:hover {
-    cursor: pointer;
-}
-
-/*!*image slider*!*/
-
-/*bottom bar(manu navbar)*/
-
-/*main**********************************/
 
 .section2 {
 
@@ -515,7 +490,33 @@ ul {
     height: 100%;
 }
 
-/****************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 424px) {
     .sticky-container {
@@ -583,6 +584,10 @@ ul {
         top: 14px
     }
 
+    .overlay a {
+        font-size: 20px;
+    }
+
 }
 
 
@@ -619,7 +624,6 @@ ul {
         margin: 0 auto;
         padding-bottom: 15px;
     }
-
 
 
     .section2-image {
@@ -690,7 +694,7 @@ ul {
 
     .carousel-indicators li {
         height: 5px;
-       top: 10px;
+        top: 10px;
 
     }
 
