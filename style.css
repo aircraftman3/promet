@@ -311,7 +311,7 @@ ul {
 /* Position the content inside the overlay */
 .overlay-content {
     position: relative;
-    top: 25%; /* 25% from the top */
+    top: 15%; /* 25% from the top */
     width: 100%; /* 100% width */
     text-align: center; /* Centered text/links */
 }
@@ -320,7 +320,7 @@ ul {
 .overlay a {
     padding: 8px;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 20px;
     color: #818181;
     display: block; /* Display block instead of inline */
     transition: 0.3s; /* Transition effects on hover (color) */
@@ -334,12 +334,14 @@ ul {
 /* Position the close button (top right corner) */
 .overlay .closebtn {
     position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
+    top: 15px;
+    right: 35px;
+    font-size: 40px;
 }
 
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+/* When the height of the screen is less than 450
+pixels, change the font-size of the links and position
+ the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
     .overlay a {
         font-size: 20px
@@ -352,24 +354,43 @@ ul {
     }
 }
 
-#hamburger-menu {
-    padding-left: 5px;
-    padding-right: 5px;
+/*#hamburger-menu {*/
+/*    padding-left: 5px;*/
+/*    padding-right: 5px;*/
 
-    color: white;
+/*    color: white;*/
+/*    display: none;*/
+/*    font-size: 25px;*/
+/*    cursor: pointer;*/
+
+/*}*/
+
+#hamburger-outer {
     display: none;
-    font-size: 25px;
-    cursor: pointer;
-
-}
-
-.hamburger-outer {
     background-color: darkred;
-
+height: 50px;
     padding-left: 10px;
 }
 
 /*Hamburger menu*/
+
+
+.icon-bar {
+    background-color: white;
+    display: block;
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    position: relative;
+    top: 15px;
+    margin-bottom: 2px;
+}
+
+.last-two {
+    margin-top: 4px;
+}
+
+
 /*image slider*/
 
 .carousel-indicators li {
@@ -515,6 +536,30 @@ ul {
     height: 100%;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /****************************************************************/
 
 @media (max-width: 424px) {
@@ -522,8 +567,8 @@ ul {
         display: none;
     }
 
-    #hamburger-menu {
-        display: inline;
+    #hamburger-outer {
+        display: block;
     }
 
     .top-bar-inner-left {
@@ -569,13 +614,7 @@ ul {
         margin-bottom: 0;
     }
 
-    .carousel-control-prev {
-        display: none
-    }
 
-    .carousel-control-next {
-        display: none;
-    }
 
     .carousel-indicators li {
         height: 5px;
@@ -592,8 +631,8 @@ ul {
         display: none;
     }
 
-    #hamburger-menu {
-        display: inline;
+    #hamburger-outer {
+        display: block;
     }
 
     .top-bar-inner-left {
@@ -621,7 +660,6 @@ ul {
     }
 
 
-
     .section2-image {
         max-width: 45%;
         max-height: 100%;
@@ -640,13 +678,6 @@ ul {
         margin-bottom: 0;
     }
 
-    .carousel-control-prev {
-        display: none
-    }
-
-    .carousel-control-next {
-        display: none;
-    }
 
 
     .carousel-indicators li {
@@ -690,17 +721,11 @@ ul {
 
     .carousel-indicators li {
         height: 5px;
-       top: 10px;
+        top: 10px;
 
     }
 
-    .carousel-control-prev {
-        display: none
-    }
 
-    .carousel-control-next {
-        display: none;
-    }
 }
 
 
