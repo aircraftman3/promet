@@ -500,21 +500,71 @@ pixels, change the font-size of the links and position
 .section4 {
     width: 100%;
 
-    height: 600px;
-    min-height: 400px;
-    background: transparent;
+    height: 700px;
+
+
 }
 
 .section4-inner {
     max-width: 1170px;
-    background: transparent;
+
     margin: 0 auto;
     height: 100%;
 }
 
+.section4-text {
+
+    margin-top: 100px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 37px 11px 16px 56px rgba(0,0,0,0.67);
+    -moz-box-shadow: 37px 11px 16px 56px rgba(0,0,0,0.67);
+    box-shadow: 37px 11px 16px 56px rgba(0,0,0,0.67);
+    padding-top: 100px;
+    float: right;
+
+    width: 600px;
+    color: white;
+}
+
+.section4-text h5{
+    padding-right: 10px;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: right;
+    padding-bottom: 10px;
+}
+
+.section4-text ul{
+    text-align: right;
+    padding-bottom: 20px;
+    list-style-type: none;
+    padding-right: 10px;
+    font-size: 14px;
+}
+
+.section4-text p{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .map {
     width: 100%;
-    background-color: #d31a71;
+
     height: 400px;
 }
 
