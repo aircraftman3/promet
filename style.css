@@ -752,6 +752,38 @@ pixels, change the font-size of the links and position
 
     }
 
+    .section4 {
+        height: 520px;
+
+
+    }
+
+    .section4-text {
+
+        margin-top: 70px;
+
+
+        padding-top: 70px;
+
+
+        width: 450px;
+
+    }
+
+    .section4-text h5 {
+
+        font-size: 30px;
+    }
+
+
+    .section4-text ul{
+        font-size: 11px;
+    }
+
+    .section4-text p{
+        font-size: 11px;
+    }
+
 
 }
 
