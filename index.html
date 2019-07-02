@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
             crossorigin="anonymous"></script>
     <script src="parallax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
@@ -18,10 +18,12 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
           integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
+    <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
     <div class="top-bar">
         <div class="top-bar-inner">
             <div class="top-bar-inner-left">
@@ -257,6 +259,24 @@
   window.onscroll = function () {
     myFunction()
   };
+
+  // ===== Scroll to Top ====
+  $(window).scroll(function() {
+    if ($(this).scrollTop() >= 290) {        // If page is scrolled more than 50px
+      $('#return-to-top').fadeIn(250);    // Fade in the arrow
+    } else {
+      $('#return-to-top').fadeOut(250);   // Else fade out the arrow
+    }
+  });
+  $('#return-to-top').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+      scrollTop : 0                       // Scroll to top of body
+    }, 500);
+  });
+
+
+
+
 
   // Get the navbar
   var navbar = document.getElementById("navbar");
