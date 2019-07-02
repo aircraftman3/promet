@@ -15,6 +15,7 @@ ul {
 
 }
 
+
 /*top bar*/
 
 .top-bar {
@@ -179,8 +180,9 @@ ul {
 
 }
 
-.sticky-container {
 
+.sticky-container {
+    height: 86px;
     display: block;
 
 }
@@ -547,6 +549,7 @@ pixels, change the font-size of the links and position
     padding-right: 10px;
     font-size: 14px;
     text-align: justify;
+    font-weight: bold;
 }
 
 
@@ -558,10 +561,9 @@ pixels, change the font-size of the links and position
 
 .footer {
     width: 100%;
+    background-color: #1e1f20;
 
-    height: 50px;
 
-    background: #1e1f20;
 }
 
 .footer p {
@@ -570,9 +572,38 @@ pixels, change the font-size of the links and position
 
 .footer-inner {
     max-width: 1170px;
-    background: #1e1f20;
+    background-color: #1e1f20;
+    width: 90%;
     margin: 0 auto;
-    height: 100%;
+
+}
+
+.footer-container {
+    display: inline-block;
+}
+
+.footer-text {
+    list-style-type: none;
+    padding-top: 20px;
+    padding-left: 0;
+    padding-bottom: 10px;
+    font-size: 11px;
+    font-weight: bold;
+    color: white;
+}
+
+.footer-text2 {
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+
+}
+
+.footer-image {
+    padding-top: 20px;
+    float: right;
+    display: inline;
+
 }
 
 
@@ -636,14 +667,15 @@ pixels, change the font-size of the links and position
         border-radius: 2px;
         top: 14px
     }
+
     .section4 {
         height: 430px;
     }
 
     .section4-text {
-        -webkit-box-shadow: 13px 6px 16px 32px rgba(0,0,0,0.75);
-        -moz-box-shadow: 6px 12px 16px 32px rgba(0,0,0,0.75);
-        box-shadow: 13px 6px 16px 32px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 13px 6px 16px 32px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 6px 12px 16px 32px rgba(0, 0, 0, 0.75);
+        box-shadow: 13px 6px 16px 32px rgba(0, 0, 0, 0.75);
         margin-top: 30px;
         padding-top: 30px;
         width: 270px;
@@ -662,6 +694,18 @@ pixels, change the font-size of the links and position
         font-size: 11px;
     }
 
+    .footer {
+        height: 300px;
+    }
+
+    .footer-image {
+
+        float: none;
+    }
+
+    .footer-image img {
+        padding-top: 10px;
+    }
 
 }
 
@@ -732,9 +776,9 @@ pixels, change the font-size of the links and position
     }
 
     .section4-text {
-        -webkit-box-shadow: 13px 6px 16px 32px rgba(0,0,0,0.75);
-        -moz-box-shadow: 6px 12px 16px 32px rgba(0,0,0,0.75);
-        box-shadow: 13px 6px 16px 32px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 13px 6px 16px 32px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 6px 12px 16px 32px rgba(0, 0, 0, 0.75);
+        box-shadow: 13px 6px 16px 32px rgba(0, 0, 0, 0.75);
         margin-top: 30px;
         padding-top: 30px;
         width: 350px;
@@ -753,6 +797,18 @@ pixels, change the font-size of the links and position
         font-size: 11px;
     }
 
+    .footer {
+        height: 300px;
+    }
+
+    .footer-image {
+
+        float: none;
+    }
+
+    .footer-image img {
+        padding-top: 10px;
+    }
 
 }
 
