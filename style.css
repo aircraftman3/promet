@@ -516,9 +516,9 @@ pixels, change the font-size of the links and position
 
     margin-top: 100px;
     margin-bottom: 20px;
-    -webkit-box-shadow: 37px 11px 16px 56px rgba(0,0,0,0.67);
-    -moz-box-shadow: 37px 11px 16px 56px rgba(0,0,0,0.67);
-    box-shadow: 37px 11px 16px 56px rgba(0,0,0,0.67);
+    -webkit-box-shadow: 37px 11px 16px 56px rgba(0, 0, 0, 0.67);
+    -moz-box-shadow: 37px 11px 16px 56px rgba(0, 0, 0, 0.67);
+    box-shadow: 37px 11px 16px 56px rgba(0, 0, 0, 0.67);
     padding-top: 100px;
     float: right;
 
@@ -526,7 +526,7 @@ pixels, change the font-size of the links and position
     color: white;
 }
 
-.section4-text h5{
+.section4-text h5 {
     padding-right: 10px;
     font-size: 45px;
     font-weight: bold;
@@ -534,7 +534,7 @@ pixels, change the font-size of the links and position
     padding-bottom: 10px;
 }
 
-.section4-text ul{
+.section4-text ul {
     text-align: right;
     padding-bottom: 20px;
     list-style-type: none;
@@ -542,24 +542,12 @@ pixels, change the font-size of the links and position
     font-size: 14px;
 }
 
-.section4-text p{
+.section4-text p {
     padding-left: 10px;
     padding-right: 10px;
     font-size: 14px;
     text-align: justify;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .map {
@@ -648,6 +636,31 @@ pixels, change the font-size of the links and position
         border-radius: 2px;
         top: 14px
     }
+    .section4 {
+        height: 430px;
+    }
+
+    .section4-text {
+        -webkit-box-shadow: 13px 6px 16px 32px rgba(0,0,0,0.75);
+        -moz-box-shadow: 6px 12px 16px 32px rgba(0,0,0,0.75);
+        box-shadow: 13px 6px 16px 32px rgba(0,0,0,0.75);
+        margin-top: 30px;
+        padding-top: 30px;
+        width: 270px;
+    }
+
+    .section4-text h5 {
+        font-size: 18px;
+    }
+
+
+    .section4-text ul {
+        font-size: 11px;
+    }
+
+    .section4-text p {
+        font-size: 11px;
+    }
 
 
 }
@@ -714,6 +727,33 @@ pixels, change the font-size of the links and position
 
     }
 
+    .section4 {
+        height: 370px;
+    }
+
+    .section4-text {
+        -webkit-box-shadow: 13px 6px 16px 32px rgba(0,0,0,0.75);
+        -moz-box-shadow: 6px 12px 16px 32px rgba(0,0,0,0.75);
+        box-shadow: 13px 6px 16px 32px rgba(0,0,0,0.75);
+        margin-top: 30px;
+        padding-top: 30px;
+        width: 350px;
+    }
+
+    .section4-text h5 {
+        font-size: 18px;
+    }
+
+
+    .section4-text ul {
+        font-size: 11px;
+    }
+
+    .section4-text p {
+        font-size: 11px;
+    }
+
+
 }
 
 /*!*Medium devices (tablets, 768px and up)*!*/
@@ -776,11 +816,11 @@ pixels, change the font-size of the links and position
     }
 
 
-    .section4-text ul{
+    .section4-text ul {
         font-size: 11px;
     }
 
-    .section4-text p{
+    .section4-text p {
         font-size: 11px;
     }
 
