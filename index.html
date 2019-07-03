@@ -75,6 +75,8 @@
                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button"
                            aria-haspopup="true" aria-expanded="false">Usługi</a>
                         <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="javascript:;">Monitoring</a></li>
+                            <li><a class="dropdown-item" href="javascript:;">Reklama</a></li>
                             <li class="dropdown-submenu">
                                 <a class="dropdown-item" tabindex="-1" href="javascript:;">Dodatkowe</a>
                                 <ul class="dropdown-menu">
@@ -86,8 +88,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li><a class="dropdown-item" href="javascript:;">Monitoring</a></li>
-                            <li><a class="dropdown-item" href="javascript:;">Reklama</a></li>
+
 
                         </ul>
 
@@ -234,13 +235,13 @@
         <div class="footer-inner">
             <div class="footer-container">
                 <ul class="footer-text">
-                    <li><span style="color: #999999">Firma :</span> PROMET-SERVICE Sp. zo.o.</li>
-                    <li><span style="color: #999999">Adres :</span>82-300 Elbląg, ul.Łokietka 119</li>
-                    <li><span style="color: #999999">Tel :</span> (55) 643 77 22</li>
-                    <li><span style="color: #999999">Tel/fax :</span> (55) 643 77 33</li>
-                    <li><span style="color: #999999">Telefon 24 h :</span> (55) 643 77 77</li>
-                    <li><span style="color: #999999">E-mail :</span> biuro@promet.elblag.pl</li>
-                    <li><span style="color: #999999">NIP :</span> 578 000 30 56</li>
+                    <li><span style="color: #999999">Firma:</span> PROMET-SERVICE Sp. zo.o.</li>
+                    <li><span style="color: #999999">Adres:</span> 82-300 Elbląg, ul.Łokietka 119</li>
+                    <li><span style="color: #999999">Tel:</span> (55) 643 77 22</li>
+                    <li><span style="color: #999999">Tel/fax:</span> (55) 643 77 33</li>
+                    <li><span style="color: #999999">Telefon 24 h:</span> (55) 643 77 77</li>
+                    <li><span style="color: #999999">E-mail:</span> biuro@promet.elblag.pl</li>
+                    <li><span style="color: #999999">NIP:</span> 578 000 30 56</li>
                 </ul>
                 <p class="footer-text2">© 2018 PROMET-SERVICE Agencja ochrony Sp.z o.o.</p>
 
@@ -313,11 +314,20 @@
   /* Open when someone clicks on the span element */
   function openNav() {
     document.getElementById("myNav").style.width = "100%";
+    var elems = document.getElementsByClassName('icon-bar');
+    for (var i=0;i<elems.length;i+=1){
+      elems[i].style.display = 'none';
+    }
+
   }
 
   /* Close when someone clicks on the "x" symbol inside the overlay */
   function closeNav() {
     document.getElementById("myNav").style.width = "0%";
+    var elems = document.getElementsByClassName('icon-bar');
+    for (var i=0;i<elems.length;i+=1){
+      elems[i].style.display = 'block';
+    }
   }
 </script>
 </body>

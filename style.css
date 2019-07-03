@@ -36,6 +36,7 @@ ul {
     transition: all 0.3s ease;
     z-index: 50;
 }
+
 #return-to-top i {
     color: #fff;
     margin: 0;
@@ -49,9 +50,11 @@ ul {
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
+
 #return-to-top:hover {
     background: rgba(0, 0, 0, 0.9);
 }
+
 #return-to-top:hover i {
     color: #fff;
     top: 5px;
@@ -347,7 +350,7 @@ ul {
     left: 0;
     top: 0;
     background-color: rgb(0, 0, 0); /* Black fallback color */
-    background-color: rgba(0, 0, 0, 0.8); /* Black w/opacity */
+    background-color: rgba(0, 0, 0, 0.9); /* Black w/opacity */
     overflow-x: hidden; /* Disable horizontal scroll */
     transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
@@ -652,6 +655,10 @@ pixels, change the font-size of the links and position
 /****************************************************************/
 
 @media (max-width: 424px) {
+
+    #return-to-top {
+        background: rgba(0, 0, 0, 0.4);
+    }
     .sticky-container {
         display: none;
     }
@@ -754,6 +761,11 @@ pixels, change the font-size of the links and position
 
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (min-width: 425px) and (max-width: 767px) {
+
+    #return-to-top {
+        background: rgba(0, 0, 0, 0.4);
+    }
+
     .sticky-container {
         display: none;
     }
@@ -856,6 +868,14 @@ pixels, change the font-size of the links and position
 
 /*!*Medium devices (tablets, 768px and up)*!*/
 @media (min-width: 768px) and (max-width: 991.98px) {
+
+    #return-to-top {
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+    .sticky-container {
+        height: 65px;
+     }
 
 
     .section2-image:last-child {
