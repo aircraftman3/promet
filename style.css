@@ -350,9 +350,10 @@ ul {
     left: 0;
     top: 0;
     background-color: rgb(0, 0, 0); /* Black fallback color */
-    background-color: rgba(0, 0, 0, 0.9); /* Black w/opacity */
+    background-color: rgba(0, 0, 0, 0.7); /* Black w/opacity */
     overflow-x: hidden; /* Disable horizontal scroll */
     transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+
 }
 
 /* Position the content inside the overlay */
@@ -651,14 +652,92 @@ pixels, change the font-size of the links and position
 
 }
 
+/*********END OF INDEX.HTML*******************/
+/**********O FIRMIE.HTML*********************/
 
-/****************************************************************/
+.section-main {
+    width: 100%;
+    height: 800px;
+    background-color: #e3e1e1;
+}
+
+.section-main-inner {
+    max-width: 1170px;
+    margin: 0 auto;
+    height: 100%;
+    background-color: #e3e1e1;
+}
+
+.section-main-inner h5 {
+    font-size: 40px;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    color: black;
+}
+
+.section-main-view {
+    width: 100%;
+    display: flex;
+    color: dimgrey;
+
+}
+
+.section-main-view img {
+    box-shadow: 4px 11px 12px 0px rgba(0, 0, 0, 0.62);
+    max-height: 350px;
+
+    border-radius: 4px;
+    border: lightgrey solid 1px;
+}
+
+.section-main-view-text {
+    margin-left: 35px;
+    overflow-wrap: break-word;
+    list-style-type: none;
+}
+
+.section-main-view-text h4 {
+    font-size: 26px;
+    padding-bottom: 15px;
+
+}
+
+
+.section-main-view-text ul {
+    padding-left: 0;
+
+    list-style-type: none;
+}
+
+.section-main-view-text li {
+    padding-bottom: 20px;
+    font-size: 14px;
+}
+
+.section-main-view-text li:before {
+    font-family: FontAwesome, sans-serif;
+    content: '\f054';
+    color: darkred;
+    padding-right: 10px;
+}
+
+.section-main-view-text p {
+    padding-top: 15px;
+    font-size: 16px;
+}
+
+
+/********MEDIA QUERIES************************/
 
 @media (max-width: 424px) {
 
     #return-to-top {
         background: rgba(0, 0, 0, 0.4);
     }
+
     .sticky-container {
         display: none;
     }
@@ -875,7 +954,7 @@ pixels, change the font-size of the links and position
 
     .sticky-container {
         height: 65px;
-     }
+    }
 
 
     .section2-image:last-child {

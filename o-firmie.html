@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
             crossorigin="anonymous"></script>
     <script src="parallax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
           integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -73,24 +74,30 @@
                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button"
                            aria-haspopup="true" aria-expanded="false">Usługi</a>
                         <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="javascript:;">Monitoring</a></li>
+                            <li><a class="dropdown-item" href="javascript:;">Reklama</a></li>
                             <li class="dropdown-submenu">
                                 <a class="dropdown-item" tabindex="-1" href="javascript:;">Dodatkowe</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item dropdown-item2" tabindex="-1" href="javascript:;">Sprzątanie</a></li>
-                                    <li><a class="dropdown-item dropdown-item2" tabindex="-1" href="javascript:;">Alpinizm</a></li>
-                                    <li><a class="dropdown-item dropdown-item2" tabindex="-1" href="javascript:;">Windsuring</a></li>
+                                    <li><a class="dropdown-item dropdown-item2" tabindex="-1" href="javascript:;">Sprzątanie</a>
+                                    </li>
+                                    <li><a class="dropdown-item dropdown-item2" tabindex="-1" href="javascript:;">Alpinizm</a>
+                                    </li>
+                                    <li><a class="dropdown-item dropdown-item2" tabindex="-1" href="javascript:;">Windsuring</a>
+                                    </li>
                                 </ul>
                             </li>
-                            <li><a class="dropdown-item" href="javascript:;">Monitoring</a></li>
-                            <li><a class="dropdown-item" href="javascript:;">Reklama</a></li>
+
 
                         </ul>
 
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="last-menu-item" href="o-firmie.html">Kadra</a>
+                        <a class="nav-link" href="o-firmie.html">Kadra</a>
                     </li>
-
+                    <li class="nav-item">
+                        <a class="nav-link" id="last-menu-item" href="o-firmie.html">Kontakt</a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -102,72 +109,83 @@
 
             <!-- Overlay content -->
             <div class="overlay-content">
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Clients</a>
-                <a href="#">Contact</a>
+                <a href="#">O firmie</a>
+                <a href="#">Oferta</a>
+                <a href="#">Usługi</a>
+                <a href="#">Sprzątanie</a>
+                <a href="#">Alpinizm</a>
+                <a href="#">Windsurfing</a>
+                <a href="#">Monitoring</a>
+                <a href="#">Reklama</a>
+                <a href="#">Kadra</a>
             </div>
 
         </div>
-        <div class="hamburger-outer">
+        <div id="hamburger-outer" onclick="openNav()">
+            <span class="icon-bar"></span>
+            <span class="icon-bar last-two"></span>
+            <span class="icon-bar last-two"></span>
             <!-- Use any element to open/show the overlay navigation menu -->
-            <span id="hamburger-menu" onclick="openNav()">&#9776</span>
+            <!--            <span id="hamburger-menu" onclick="openNav()">&#9776</span>-->
         </div>
     </div>
 </header>
 <main>
-    <div class="section2">
-        <div class="section2-inner">
-            <div class="section2-images">
-                <div class="section2-image">
-                    <img src="./images/guard.jpg" alt="Guard 1">
-                    <h3>Hey</h3>
-                    <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip.</p>
-
-                </div>
-                <div class="section2-image">
-                    <img src="./images/guard.jpg" alt="Guard 2">
-
-                    <h3>Hey</h3>
-                    <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip.</p>
-
-                </div>
-                <div class="section2-image">
-                    <img src="./images/guard.jpg" alt="Guard 3">
-
-                    <h3>Hey</h3>
-                    <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip.</p>
-
+    <div class="section-main">
+        <div class="section-main-inner">
+            <h5>o firmie</h5>
+            <div class="section-main-view">
+                <img class="img-fluid" src="./images/o-firmie.png" alt="">
+                <div class="section-main-view-text">
+                    <h4>Agencja Ochrony „PROMET-SERVICE” Sp. z o.o od 30 lat świadczy
+                        usługi ochrony osób i mienia, spełniając najwyższe wymagania
+                        dotyczące tego typu działalności.</h4>
+                    <ul>
+                        <li>Dysponujemy odpowiednim potencjałem kadrowym oraz kapitałem
+                            gwarantującym efektywne świadczenie takich usług.</li>
+                        <li>Działalność prowadzimy na podstawie nowej, zgodnej z wymogami
+                            w/w ustawy KONCESJI MSWiA Nr L-2078/00.</li>
+                        <li>Zatrudniamy pracowników, których kwalifikacje zawodowe i
+                            psychofizyczne zgodne są z wymogami w/w ustawy.</li>
+                        <li>W zakresie świadczonych usług podlegamy rygorom ustawy o
+                            ochronie informacji niejawnych (Dz.U. Nr 11 z dnia 22.01.1999r.).</li>
+                        <li>W dniu 10.02.2003r. uzyskaliśmy Certyfikat Systemu Zarządzania
+                            Jakością ISO 9001:2000.</li>
+                        <li>W 2001r. przystąpiliśmy do Polskiej Izby Ochrony Osób i Mienia,
+                            która jest członkiem Krajowej Izby Gospodarczej.</li>
+                        <li>Posiadamy własną niezależną sieć łączności radiowej, pracującej
+                            na podstawie zezwolenia wydanego przez Urząd Regulacji Telekomunikacji
+                            na używanie urządzeń radiokomunikacyjnych.</li>
+                    </ul>
+                    <p>Posiadamy niezbędne uprawnienia, zgodne z ustawą z dnia 22.08.1997r. o
+                        ochronie osób i mienia upoważniające do świadczenia usług fizycznej i
+                        technicznej ochrony osób i mienia.</p>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="section3">
-        <div class="section3-inner">
-            <p style="font-size: 20px; color: red; text-align: center; padding-top: 150px">Cokolwiek</p>
-        </div>
-    </div>
-    <div class="section4" data-parallax="scroll" data-image-src="images/ocean.jpg">
-        <div class="section4-inner">
-            <p style="font-size: 20px; color: red; text-align: center; padding-top: 250px">Cokolwiek</p>
-            <p style="font-size: 20px; color: blue; text-align: center">Cokolwiek</p>
-        </div>
-    </div>
-    <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9338.586996984313!2d19.412638880408018!3d54.186331733763346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd4b832aff10dd%3A0xbc2ea2f9bbc84f39!2sPromet-Service+Sp.+z+o.o.!5e0!3m2!1spl!2spl!4v1545927928920"
-                width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
 </main>
 <footer>
     <div class="footer">
         <div class="footer-inner">
-            <p>Cokolwiek wpisane w stopkę.</p>
+            <div class="footer-container">
+                <ul class="footer-text">
+                    <li><span style="color: #999999">Firma:</span> PROMET-SERVICE Sp. zo.o.</li>
+                    <li><span style="color: #999999">Adres:</span> 82-300 Elbląg, ul.Łokietka 119</li>
+                    <li><span style="color: #999999">Tel:</span> (55) 643 77 22</li>
+                    <li><span style="color: #999999">Tel/fax:</span> (55) 643 77 33</li>
+                    <li><span style="color: #999999">Telefon 24 h:</span> (55) 643 77 77</li>
+                    <li><span style="color: #999999">E-mail:</span> biuro@promet.elblag.pl</li>
+                    <li><span style="color: #999999">NIP:</span> 578 000 30 56</li>
+                </ul>
+                <p class="footer-text2">© 2018 PROMET-SERVICE Agencja ochrony Sp.z o.o.</p>
+
+            </div>
+            <div class="footer-image">
+                <img src="./images/footer-logo.jpg" alt="">
+            </div>
+
+
         </div>
     </div>
 </footer>
@@ -176,6 +194,21 @@
   window.onscroll = function () {
     myFunction()
   };
+
+  // ===== Scroll to Top ====
+  $(window).scroll(function () {
+    if ($(this).scrollTop() >= 290) {        // If page is scrolled more than 50px
+      $('#return-to-top').fadeIn(250);    // Fade in the arrow
+    } else {
+      $('#return-to-top').fadeOut(250);   // Else fade out the arrow
+    }
+  });
+  $('#return-to-top').click(function () {      // When arrow is clicked
+    $('body,html').animate({
+      scrollTop: 0                       // Scroll to top of body
+    }, 500);
+  });
+
 
   // Get the navbar
   var navbar = document.getElementById("navbar");
@@ -206,17 +239,26 @@
     }
   });
 
-  $('.section4').parallax({imageSrc: './images/ocean.jpg'});
+  $('.section4').parallax({imageSrc: './images/background.jpeg'});
 
 
   /* Open when someone clicks on the span element */
   function openNav() {
     document.getElementById("myNav").style.width = "100%";
+    var elems = document.getElementsByClassName('icon-bar');
+    for (var i = 0; i < elems.length; i += 1) {
+      elems[i].style.display = 'none';
+    }
+
   }
 
   /* Close when someone clicks on the "x" symbol inside the overlay */
   function closeNav() {
     document.getElementById("myNav").style.width = "0%";
+    var elems = document.getElementsByClassName('icon-bar');
+    for (var i = 0; i < elems.length; i += 1) {
+      elems[i].style.display = 'block';
+    }
   }
 </script>
 </body>
