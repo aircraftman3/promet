@@ -56,14 +56,15 @@
             </div>
 
             <div class="mid-bar-inner-phone">
-                <a href="tel:+48556437722"><i class="fas fa-phone"></i> 55 643 77 22</a>
+                <a href="tel:+48556437777"><span style="font-size: 25px;">24h</span><i class="go fas fa-phone"></i> 55 643 77 77</a>
             </div>
         </div>
     </div>
     <div class="bottom-bar">
         <div class="sticky-container">
             <nav class="bottom-bar-inner" id="navbar">
-                <ul class="nav nav-pills">
+
+                <ul class="nav nav-pills navbar-border">
                     <li class="nav-item">
                         <a class="nav-link active" id="first-menu-item" href="./o-firmie.html" role="button"
                            aria-haspopup="true" aria-expanded="false">O firmie</a>
@@ -100,6 +101,11 @@
                         <a class="nav-link" id="last-menu-item" href="o-firmie.html">Kontakt</a>
                     </li>
                 </ul>
+                <div class="progress-container">
+                    <div class="progress-bar" id="myBar">
+
+                    </div>
+                </div>
             </nav>
         </div>
         <!-- The overlay -->
@@ -202,11 +208,6 @@
             </div>
         </div>
     </div>
-    <div class="section3">
-        <div class="section3-inner">
-            <p style="font-size: 20px; color: red; text-align: center; padding-top: 150px">Cokolwiek</p>
-        </div>
-    </div>
     <div class="section4" data-parallax="scroll" data-image-src="images/background.jpeg">
         <div class="section4-inner">
             <div class="section4-text">
@@ -257,9 +258,8 @@
 </footer>
 <script>
   // When the user scrolls the page, execute myFunction
-  window.onscroll = function () {
-    myFunction()
-  };
+  window.onscroll = function() {myFunction(), myFunction2()};
+  // window.onscroll = function() {};
 
   // ===== Scroll to Top ====
   $(window).scroll(function() {
@@ -295,6 +295,15 @@
   }
 
 
+
+  function myFunction2() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
+  }
+
+
   $(".dropdown-toggle").on("mouseenter", function () {
     // make sure it is not shown:
     if (!$(this).parent().hasClass("show")) {
@@ -309,6 +318,9 @@
   });
 
   $('.section4').parallax({imageSrc: './images/background.jpeg'});
+
+
+
 
 
   /* Open when someone clicks on the span element */
