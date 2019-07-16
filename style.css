@@ -398,7 +398,8 @@ ul {
 
 /* When you mouse over the navigation links, change their color */
 .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
+
+    background-color: #f1f1f1;
 }
 
 /* Position the close button (top right corner) */
@@ -819,8 +820,11 @@ pixels, change the font-size of the links and position
         font-size: 15px;
 
     }
-
-
+    .mid-bar {
+        background-image: url(./images/back4.jpg);
+        background-size: cover;
+        background-position: center;
+    }
 
     .mid-bar-inner-phone {
         margin: 0 auto;
@@ -878,6 +882,7 @@ pixels, change the font-size of the links and position
         margin-top: 30px;
         padding-top: 30px;
         width: 270px;
+        opacity: 1;
     }
 
     .section4-text h5 {
@@ -952,10 +957,13 @@ pixels, change the font-size of the links and position
 
     }
 
-    .mid-bar {
-        /*background-color: #e3e1e1;*/
-    }
 
+    .mid-bar {
+        background-image: url(./images/back4.jpg);
+        background-size: cover;
+
+
+    }
     .mid-bar-inner-phone {
         margin: 0 auto;
         padding-bottom: 15px;
@@ -1013,6 +1021,7 @@ pixels, change the font-size of the links and position
         margin-top: 30px;
         padding-top: 30px;
         width: 350px;
+        opacity: 1;
     }
 
     .section4-text h5 {
@@ -1046,7 +1055,15 @@ pixels, change the font-size of the links and position
 /*!*Medium devices (tablets, 768px and up)*!*/
 @media (min-width: 768px) and (max-width: 991.98px) {
 
+    .mid-bar {
+        background-image: url(./images/back4.jpg);
+        background-size: cover;
 
+    }
+
+    .bottom-bar {
+        background-color: #d1cfd0;
+    }
 
     #return-to-top {
         background: rgba(0, 0, 0, 0.4);
@@ -1094,7 +1111,6 @@ pixels, change the font-size of the links and position
     }
 
 
-
     .bottom-bar-inner {
         width: 94%;
     }
@@ -1112,15 +1128,10 @@ pixels, change the font-size of the links and position
     }
 
     .section4-text {
-
         margin-top: 70px;
-
-
         padding-top: 70px;
-
-
         width: 450px;
-
+        opacity: 1;
     }
 
     .section4-text h5 {
