@@ -381,7 +381,7 @@ ul {
 /* Position the content inside the overlay */
 .overlay-content {
     position: relative;
-    top: 15%; /* 25% from the top */
+    top: 20%; /* 25% from the top */
     width: 100%; /* 100% width */
     text-align: center; /* Centered text/links */
 }
@@ -400,6 +400,10 @@ ul {
 .overlay a:hover, .overlay a:focus {
 
     background-color: #f1f1f1;
+}
+
+.closebtn:nth-child(1):hover {
+    background-color: transparent;
 }
 
 /* Position the close button (top right corner) */
