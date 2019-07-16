@@ -56,7 +56,7 @@
             </div>
 
             <div class="mid-bar-inner-phone">
-                <a href="tel:+48556437777"><span style="font-size: 25px;">24h</span><i class="go fas fa-phone"></i> 55 643 77 77</a>
+                <a href="tel:+48556437777"><i class="go fas fa-phone"></i> 55 643 77 77</a>
             </div>
         </div>
     </div>
@@ -139,7 +139,7 @@
 </header>
 <main>
     <div class="image-slider">
-        <div id="carouselExampleIndicators" class="carousel slide" data-touch="true" data-ride="carousel" >
+        <div id="carouselExampleIndicators" class="carousel slide" data-touch="true" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -201,7 +201,8 @@
                             oferujemy profesjonalny, dwukierunkowy monitoring radiowy posiadający najwyższe wskaźniki
                             niezawodności i jakości, realizowany na własnych kanałach radiowych.
                         </p>
-                        <a href="./monitoring.html" class="btn btn-outline-secondary" id="section2-last-image">Czytaj dalej</a>
+                        <a href="./monitoring.html" class="btn btn-outline-secondary" id="section2-last-image">Czytaj
+                            dalej</a>
                     </div>
                 </div>
 
@@ -247,10 +248,9 @@
                 <p class="footer-text2">© 2018 PROMET-SERVICE Agencja ochrony Sp.z o.o.</p>
 
             </div>
-<div class="footer-image">
-    <img src="./images/footer-logo.jpg" alt="">
-</div>
-
+            <div class="footer-image">
+                <img src="./images/footer-logo.jpg" alt="">
+            </div>
 
 
         </div>
@@ -258,25 +258,24 @@
 </footer>
 <script>
   // When the user scrolls the page, execute myFunction
-  window.onscroll = function() {myFunction(), myFunction2()};
+  window.onscroll = function () {
+    myFunction(), myFunction2()
+  };
   // window.onscroll = function() {};
 
   // ===== Scroll to Top ====
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     if ($(this).scrollTop() >= 290) {        // If page is scrolled more than 50px
       $('#return-to-top').fadeIn(250);    // Fade in the arrow
     } else {
       $('#return-to-top').fadeOut(250);   // Else fade out the arrow
     }
   });
-  $('#return-to-top').click(function() {      // When arrow is clicked
+  $('#return-to-top').click(function () {      // When arrow is clicked
     $('body,html').animate({
-      scrollTop : 0                       // Scroll to top of body
+      scrollTop: 0                       // Scroll to top of body
     }, 500);
   });
-
-
-
 
 
   // Get the navbar
@@ -293,7 +292,6 @@
       navbar.classList.remove("sticky");
     }
   }
-
 
 
   function myFunction2() {
@@ -318,16 +316,15 @@
   });
 
   $('.section4').parallax({imageSrc: './images/background.jpeg'});
-
-
-
+  $('header').parallax({imageSrc: './images/back2.jpg'});
+  $('.section2').parallax({imageSrc: './images/back3.jpg'});
 
 
   /* Open when someone clicks on the span element */
   function openNav() {
     document.getElementById("myNav").style.width = "100%";
     var elems = document.getElementsByClassName('icon-bar');
-    for (var i=0;i<elems.length;i+=1){
+    for (var i = 0; i < elems.length; i += 1) {
       elems[i].style.display = 'none';
     }
 
@@ -337,7 +334,7 @@
   function closeNav() {
     document.getElementById("myNav").style.width = "0%";
     var elems = document.getElementsByClassName('icon-bar');
-    for (var i=0;i<elems.length;i+=1){
+    for (var i = 0; i < elems.length; i += 1) {
       elems[i].style.display = 'block';
     }
   }
