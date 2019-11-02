@@ -62,7 +62,8 @@
     <div class="bottom-bar">
         <div class="sticky-container">
             <nav class="bottom-bar-inner" id="navbar">
-                <ul class="nav nav-pills">
+
+                <ul class="nav nav-pills navbar-border">
                     <li class="nav-item">
                         <a class="nav-link active" id="first-menu-item" href="./o-firmie.html" role="button"
                            aria-haspopup="true" aria-expanded="false">O firmie</a>
@@ -72,10 +73,16 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="javascript:;" role="button"
-                           aria-haspopup="true" aria-expanded="false">Usługi</a>
+                           aria-haspopup="true" aria-expanded="false" data-flip="false">Oferta</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="javascript:;">Monitoring</a></li>
-                            <li><a class="dropdown-item" href="javascript:;">Reklama</a></li>
+                            <li><a class="dropdown-item" href="javascript:;">Monitoring sygnałów alarmowych</a></li>
+                            <li><a class="dropdown-item" href="javascript:;">Monitoring wizyjny CCTV</a></li>
+                            <li><a class="dropdown-item" href="javascript:;">Monitoring pożarowy</a></li>
+                            <li><a class="dropdown-item" href="javascript:;">Ochrona fizyczna</a></li>
+                            <li><a class="dropdown-item" href="javascript:;">Konwojowanie</a></li>
+                            <li><a class="dropdown-item" href="javascript:;">Serwis i konserwacja</a></li>
+                            <li><a class="dropdown-item" href="javascript:;">Instalacje</a></li>
+                            <li><a class="dropdown-item" href="javascript:;">Projektowanie planów ochrony</a></li>
                             <li class="dropdown-submenu">
                                 <a class="dropdown-item" tabindex="-1" href="javascript:;">Dodatkowe</a>
                                 <ul class="dropdown-menu">
@@ -96,7 +103,7 @@
                         <a class="nav-link" href="kadra.html">Kadra</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="last-menu-item" href="o-firmie.html">Kontakt</a>
+                        <a class="nav-link" id="last-menu-item" href="kontakt.html">Kontakt</a>
                     </li>
                 </ul>
             </nav>
@@ -109,8 +116,8 @@
 
             <!-- Overlay content -->
             <div class="overlay-content">
-                <a href="#">O firmie</a>
-                <a href="#">Oferta</a>
+                <a href="./o-firmie.html">O firmie</a>
+                <a href="./oferta.html">Oferta</a>
                 <a href="#">Usługi</a>
                 <a href="#">Sprzątanie</a>
                 <a href="#">Alpinizm</a>
@@ -241,7 +248,7 @@
   });
 
   $('.section4').parallax({imageSrc: './images/background.jpeg'});
-
+  $('header').parallax({imageSrc: './images/back2.jpg'});
 
   /* Open when someone clicks on the span element */
   function openNav() {
