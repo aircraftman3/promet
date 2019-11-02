@@ -785,6 +785,13 @@ pixels, change the font-size of the links and position
 }
 
 
+.btn-send {
+    background-color: darkred;
+    color: white;
+}
+
+
+
 /********MEDIA QUERIES************************/
 
 @media (max-width: 424px) {
