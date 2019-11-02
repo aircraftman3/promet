@@ -620,6 +620,7 @@ pixels, change the font-size of the links and position
 .section4-text:hover {
     transform: scale(1.02);
     opacity: 1;
+    background-color: #0f2335f0;
 }
 
 .section4-text h5 {
