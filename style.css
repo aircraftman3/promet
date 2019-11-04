@@ -731,7 +731,7 @@ pixels, change the font-size of the links and position
 .section-main-view {
     width: 100%;
     display: flex;
-
+    padding-bottom: 20px;
 
 }
 
@@ -744,8 +744,8 @@ pixels, change the font-size of the links and position
 }
 
 .section-main-view-text {
-    margin-left: 35px;
-    overflow-wrap: break-word;
+
+    /*overflow-wrap: break-word;*/
     list-style-type: none;
     color: dimgrey;
 
@@ -755,34 +755,45 @@ pixels, change the font-size of the links and position
 .section-main-view-text h4 {
     font-size: 18px;
     padding-bottom: 15px;
-    text-transform: uppercase;
+
     color: dimgrey;
     text-align: justify;
+    margin: 0;
 }
 
 
 .section-main-view-text ul {
-    padding-left: 0;
+    padding-left: 15px;
 
-    list-style-type: none;
+
 }
 
 .section-main-view-text li {
+
     text-align: justify;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     font-size: 14px;
 }
 
-.section-main-view-text li:before {
-    font-family: FontAwesome, sans-serif;
-    content: '\f0c8';
-    color: dimgrey;
-    padding-right: 10px;
-}
 
 .section-main-view-text p {
-    font-size: 12px;
+    font-size: 14px;
 
+}
+
+.section-main-view-text img {
+
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    transition: transform .5s, filter 1.5s ease-in-out;
+    filter: grayscale(100%);
+
+}
+
+.section-main-view-text img:hover {
+    filter: grayscale(0);
+    transform: scale(1.02);
 }
 
 
@@ -790,7 +801,6 @@ pixels, change the font-size of the links and position
     background-color: darkred;
     color: white;
 }
-
 
 
 /********MEDIA QUERIES************************/
@@ -1043,6 +1053,7 @@ pixels, change the font-size of the links and position
         width: 350px;
         opacity: 1;
     }
+
     .section4-text:hover {
         transform: none;
     }

@@ -143,8 +143,8 @@
         <div class="section-main-inner">
             <h5>o firmie</h5>
             <div class="section-main-view">
-                <img class="img-fluid" src="./images/o-firmie.jpg" alt="">
                 <div class="section-main-view-text">
+                    <img src="./images/o-firmie.jpg" alt="">
                     <h4>Agencja Ochrony <span style="font-weight:bold">„PROMET-SERVICE”</span> Sp. z o.o. od <span
                             style="font-weight:bold">30 lat</span> świadczy
                         usługi ochrony osób i mienia, spełniając najwyższe wymagania
@@ -177,6 +177,7 @@
                         ochronie osób i mienia upoważniające do świadczenia usług fizycznej i
                         technicznej ochrony osób i mienia.</p>
                 </div>
+
             </div>
         </div>
     </div>
@@ -206,9 +207,10 @@
     </div>
 </footer>
 <script>
+
   // When the user scrolls the page, execute myFunction
   window.onscroll = function () {
-    myFunction(), myFunction2()
+    myFunction();
   };
   // window.onscroll = function() {};
 
@@ -243,14 +245,6 @@
   }
 
 
-  function myFunction2() {
-    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    var scrolled = (winScroll / height) * 100;
-    document.getElementById("myBar").style.width = scrolled + "%";
-  }
-
-
   $(".dropdown-toggle").on("mouseenter", function () {
     // make sure it is not shown:
     if (!$(this).parent().hasClass("show")) {
@@ -264,7 +258,7 @@
     }
   });
 
-  $('.section4').parallax({imageSrc: './images/background.jpeg'});
+
   $('header').parallax({imageSrc: './images/back2.jpg'});
   $('.section2').parallax({imageSrc: './images/back3.jpg'});
 
