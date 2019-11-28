@@ -715,6 +715,7 @@ pixels, change the font-size of the links and position
     margin: 0 auto;
     height: 100%;
     background-color: #e3e1e1;
+    font-weight: 500;
 }
 
 .section-main-inner h5 {
@@ -778,6 +779,7 @@ pixels, change the font-size of the links and position
 
 .section-main-view-text p {
     font-size: 14px;
+    text-align: justify;
 
 }
 
@@ -947,6 +949,40 @@ pixels, change the font-size of the links and position
         font-size: 10px;
     }
 
+    .section-main-inner h5 {
+        font-size: 30px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .section-main-inner {
+        max-width: 96%;
+    }
+
+    .section-main-view-text h4 {
+        font-size: 14px;
+        padding-bottom: 15px;
+    }
+
+    .section-main-inner h5 {
+        font-size: 20px;
+    }
+
+    .section-main-view-text img {
+        margin-bottom: 20px;
+    }
+
+    .section-main-view-text li {
+        padding-bottom: 5px;
+        font-size: 13px;
+    }
+
+    .section-main-view-text p {
+        padding-top: 15px;
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
 }
 
 
@@ -1083,6 +1119,36 @@ pixels, change the font-size of the links and position
         padding-top: 10px;
     }
 
+    .section-main-inner h5 {
+        font-size: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .section-main-inner {
+        max-width: 96%;
+    }
+
+    .section-main-view-text h4 {
+        font-size: 14px;
+        padding-bottom: 15px;
+    }
+
+    .section-main-view-text img {
+        margin-bottom: 20px;
+    }
+
+    .section-main-view-text li {
+        padding-bottom: 5px;
+        font-size: 13px;
+    }
+
+    .section-main-view-text p {
+        padding-top: 15px;
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
 
 }
 
@@ -1183,7 +1249,21 @@ pixels, change the font-size of the links and position
         font-size: 11px;
     }
 
+    .section-main-inner {
+        max-width: 96%;
+    }
 
+    .section-main-view-text p {
+        padding-top: 15px;
+        margin-bottom: 0;
+
+    }
+
+    .section-main-inner h5 {
+        font-size: 30px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
 }
 
 
@@ -1194,6 +1274,15 @@ pixels, change the font-size of the links and position
         margin-top: 70px;
         padding-top: 70px;
         opacity: 1;
+    }
+
+    .section-main-inner {
+        max-width: 96%;
+    }
+
+    .section-main-view-text p {
+        padding-top: 15px;
+        margin-bottom: 0;
     }
 
 }
