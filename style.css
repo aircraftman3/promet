@@ -969,7 +969,7 @@ pixels, change the font-size of the links and position
     }
 
     .section-main-view-text img {
-        margin-bottom: 20px;
+        margin-bottom: 25px;
     }
 
     .section-main-view-text li {
@@ -981,6 +981,12 @@ pixels, change the font-size of the links and position
         padding-top: 15px;
         font-size: 14px;
         margin-bottom: 0;
+    }
+    .my-auto {
+        font-size: 15px;
+    }
+    .w-75 {
+        width: 100%!important;
     }
 
 }
@@ -1135,7 +1141,7 @@ pixels, change the font-size of the links and position
     }
 
     .section-main-view-text img {
-        margin-bottom: 20px;
+        margin-bottom: 25px;
     }
 
     .section-main-view-text li {
