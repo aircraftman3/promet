@@ -121,18 +121,43 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
             <!-- Overlay content -->
-            <div class="overlay-content">
-                <a href="./o-firmie.html">O firmie</a>
-                <a href="./oferta.html">Oferta</a>
-                <a href="#">Usługi</a>
-                <a href="#">Sprzątanie</a>
-                <a href="#">Alpinizm</a>
-                <a href="#">Windsurfing</a>
-                <a href="#">Monitoring</a>
-                <a href="#">Reklama</a>
-                <a href="./kadra.html">Kadra</a>
-                <a href="./kontakt.html">Kontakt</a>
+<!--            <div class="overlay-content">-->
+<!--                <a href="./o-firmie.html">O firmie</a>-->
+<!--                <a href="./oferta.html">Oferta</a>-->
+<!--                <a href="#">Usługi</a>-->
+<!--                <a href="#">Sprzątanie</a>-->
+<!--                <a href="#">Alpinizm</a>-->
+<!--                <a href="#">Windsurfing</a>-->
+<!--                <a href="#">Monitoring</a>-->
+<!--                <a href="#">Reklama</a>-->
+<!--                <a href="./kadra.html">Kadra</a>-->
+<!--                <a href="./kontakt.html">Kontakt</a>-->
+<!--            </div>-->
+
+            <!-- the cube -->
+
+            <div class="scene">
+                <div class="cube">
+                    <div class="cube__face cube__face--front">
+                        <ul>
+                            <li>raz</li>
+                            <li>dwa</li>
+                            <li>trzy</li>
+                        </ul>
+                    </div>
+                    <div class="cube__face cube__face--right">right</div>
+                </div>
             </div>
+            <p class="radio-group">
+                <label>
+                    <input type="radio" name="rotate-cube-side" value="front" checked /> front
+                </label>
+                <label>
+                    <input type="radio" name="rotate-cube-side" value="right" /> right
+                </label>
+            </p>
+
+            <!-- end of cube -->
 
         </div>
         <div id="hamburger-outer" onclick="openNav()">
@@ -345,6 +370,28 @@
       elems[i].style.display = 'block';
     }
   }
+
+  /* the cube*/
+
+  var cube = document.querySelector('.cube');
+  var radioGroup = document.querySelector('.radio-group');
+  var currentClass = '';
+
+  function changeSide() {
+    var checkedRadio = radioGroup.querySelector(':checked');
+    var showClass = 'show-' + checkedRadio.value;
+    if ( currentClass ) {
+      cube.classList.remove( currentClass );
+    }
+    cube.classList.add( showClass );
+    currentClass = showClass;
+  }
+  // set initial side
+  changeSide();
+
+  radioGroup.addEventListener( 'change', changeSide );
+
+  /* the cube end*/
 </script>
 </body>
 </html>
