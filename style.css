@@ -980,6 +980,10 @@ pixels, change the font-size of the links and position
         max-width: 96%;
     }
 
+    .section-main-view {
+padding-right: 5px;
+    }
+
     .section-main-view-text h4 {
         font-size: 14px;
         padding-bottom: 15px;
@@ -1175,7 +1179,10 @@ pixels, change the font-size of the links and position
 
     .section-main-view-text img {
         margin-bottom: 25px;
+        float:none;
+        max-height: 210px;
     }
+    
 
     .section-main-view-text li {
         padding-bottom: 5px;
@@ -1302,9 +1309,16 @@ pixels, change the font-size of the links and position
     .section-main-view-text p {
         padding-top: 15px;
         margin-bottom: 0;
-
     }
-
+    .section-main-view-text h4 {
+        font-size: 15px;
+    }
+    .section-main-view-text li {
+        font-size: 13px;
+    }
+    .section-main-view-text img {
+        max-height:200px;
+    }
     .section-main-inner h5 {
         font-size: 30px;
         padding-top: 15px;
@@ -1315,9 +1329,12 @@ pixels, change the font-size of the links and position
     }
 }
 
+    
+
+
 
 /*!*Large devices (desktops, 992px and up)*!*/
-@media (min-width: 992px) and (max-width: 1199.98px) {
+@media (min-width: 991.99px) and (max-width: 1199.98px) {
     .section2-image {
         max-width: 34%;
     }
@@ -1330,7 +1347,7 @@ pixels, change the font-size of the links and position
     }
 
     .section4-text {
-        background-color: #0f2335f0;
+       
         margin-top: 70px;
         padding-top: 70px;
         opacity: 1;
@@ -1338,6 +1355,7 @@ pixels, change the font-size of the links and position
 
     .section-main-inner {
         max-width: 96%;
+        
     }
 
     .section-main-view-text p {
