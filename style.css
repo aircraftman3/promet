@@ -405,10 +405,7 @@ ul {
 }
 
 /* When you mouse over the navigation links, change their color */
-.overlay a:hover, .overlay a:focus {
 
-    background-color: #f1f1f1;
-}
 
 .closebtn:nth-child(1):hover {
     background-color: transparent;
@@ -416,7 +413,7 @@ ul {
 
 /* Position the close button (top right corner) */
 .overlay .closebtn {
-    position: absolute;
+    position: fixed;
     top: 15px;
     right: 35px;
     font-size: 40px;
