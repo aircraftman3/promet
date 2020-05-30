@@ -382,6 +382,17 @@ ul {
     width: 100%; /* 100% width */
     text-align: center; /* Centered text/links */
 }
+.kreska {
+    margin: 0 auto;
+    position: relative;
+    height: 3px;
+    width: 70px;
+    background-color: red;
+    bottom: 8px;
+}
+
+
+
 
 /* The navigation links inside the overlay */
 .overlay a {
@@ -926,7 +937,7 @@ pixels, change the font-size of the links and position
         margin-top: 50px;
         padding-top: 30px;
         width: 270px;
-        opacity: 1;
+        opacity: 0.9;
     }
 
     .section4-text:hover {
@@ -1098,7 +1109,7 @@ padding-right: 5px;
         margin-top: 0;
     }
     #section2-image4 ul {
-        margin-bottom: 5.5rem;
+        margin-bottom: 3rem;
     }
 
     .section2-images {
@@ -1126,7 +1137,7 @@ padding-right: 5px;
         margin-top: 50px;
         padding-top: 30px;
         width: 350px;
-        opacity: 1;
+        opacity: 0.9;
     }
 
     .section4-text:hover {
@@ -1225,6 +1236,7 @@ padding-right: 5px;
 
     .section2-image {
         max-width: 45%;
+        max-height: 100%;
         opacity: 1;
         transition: none;
     }
@@ -1248,8 +1260,11 @@ padding-right: 5px;
     #section2-image1 {
         margin-bottom: 30px;
     }
+    #section2-image2 {
+        margin-bottom: 30px;
+    }
     #section2-image4 ul {
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
 
 
@@ -1285,7 +1300,7 @@ padding-right: 5px;
         margin-top: 70px;
         padding-top: 70px;
         width: 450px;
-        opacity: 1;
+        opacity: 0.9;
     }
 
     .section4-text h5 {
@@ -1350,7 +1365,7 @@ padding-right: 5px;
        
         margin-top: 70px;
         padding-top: 70px;
-        opacity: 1;
+        opacity: 0.9;
     }
 
     .section-main-inner {
