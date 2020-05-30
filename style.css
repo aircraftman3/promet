@@ -413,7 +413,7 @@ ul {
 
 /* Position the close button (top right corner) */
 .overlay .closebtn {
-    position: fixed;
+    position: absolute;
     top: 15px;
     right: 35px;
     font-size: 40px;
@@ -990,6 +990,7 @@ pixels, change the font-size of the links and position
 
     .section-main-view {
 padding-right: 5px;
+padding-left: 5px;
     }
 
     .section-main-view-text h4 {
