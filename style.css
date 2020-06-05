@@ -1194,8 +1194,12 @@ padding-left: 5px;
         margin-bottom: 25px;
         float:none;
         max-height: 210px;
+        max-width: 373px;
     }
     
+    /* #img-kariera {
+        max-height: 145px;
+    } */
 
     .section-main-view-text li {
         padding-bottom: 5px;
@@ -1335,6 +1339,7 @@ padding-left: 5px;
     }
     .section-main-view-text img {
         max-height:200px;
+        max-width: 356px;
     }
     .section-main-inner h5 {
         font-size: 30px;
