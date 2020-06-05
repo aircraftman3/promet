@@ -13,6 +13,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
@@ -69,10 +71,7 @@
                         <a class="nav-link active" id="first-menu-item" href="./o-firmie.html" role="button"
                            aria-haspopup="true" aria-expanded="false">O firmie</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="oferta.html">Oferta</a>
-                    </li>
-                    <li class="nav-item">
+                                        <li class="nav-item">
                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="javascript:;" role="button"
                            aria-haspopup="true" aria-expanded="false" data-flip="false">Oferta</a>
                         <ul class="dropdown-menu">
@@ -103,6 +102,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="kadra.html">Kadra</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="oferta.html">Oferta</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="last-menu-item" href="kontakt.html">Kontakt</a>
@@ -357,6 +359,18 @@
       elems[i].style.display = 'block';
     }
   }
+
+  $(".carousel").swipe({
+
+swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+
+  if (direction == 'left') $(this).carousel('next');
+  if (direction == 'right') $(this).carousel('prev');
+
+},
+allowPageScroll:"vertical"
+
+});
 </script>
 </body>
 </html>

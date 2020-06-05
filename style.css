@@ -435,6 +435,10 @@ pixels, change the font-size of the links and position
     }
 }
 
+.lock-scroll {
+    overflow: hidden;
+}
+
 /*#hamburger-menu {*/
 /*    padding-left: 5px;*/
 /*    padding-right: 5px;*/
