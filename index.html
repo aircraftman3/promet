@@ -144,9 +144,8 @@
                         <a href="">Projektowanie planów ochrony</a>
                         <a href="">Kontrole dostępu</a>
                     </div>
-                    <div class="kreska" id="kreska3"></div>
 
-                    <a href="./kadra.html">Kadra</a>
+                    <a href="./kadra.html" id="kadra-padding">Kadra</a>
                     <a href="./kariera.html">Kariera</a>
                     <a href="./kontakt.html">Kontakt</a>
                 </div>
@@ -332,39 +331,44 @@
                 navbar.classList.remove("sticky");
             }
         }
+        // function openOferta() {         
+
+        //     var oferta = document.querySelector("#overlay-oferta2");
+
+        //     if (oferta.style.visibility === "visible") {
+        //         oferta.style.visibility = "hidden";
+        //         oferta.style.height = "0";
+        //         oferta.style.opacity = "0";
+        //         document.getElementById("kreska2").style.width = "0";
+
+        //     } else {
+        //         oferta.style.visibility = "visible";
+        //         oferta.style.height = "auto";
+        //         oferta.style.opacity = "1";
+        //         document.getElementById("kreska2").style.width = "73px";
+        //     }
+        // }
+
         function openOferta() {
-
-
-            // var oferta = document.getElementById("overlay-oferta2");
-            // if (oferta.style.height === "0") {
-            //     oferta.style.height = "auto";
-            //     oferta.style.visibility = "visible";
-            //     document.getElementById("kreska2").style.width = "70px";
-            // } else {
-            //     oferta.style.height = "0";
-            //     oferta.style.visibility = "hidden";
-            //     document.getElementById("kreska2").style.width = "0";
-            // }
 
             var oferta = document.querySelector("#overlay-oferta2");
 
-            if (oferta.style.visibility === "visible") {
-                oferta.style.visibility = "hidden";
+            if (oferta.style.opacity === "1") {
+
                 oferta.style.height = "0";
+                oferta.style.opacity = "0";
                 document.getElementById("kreska2").style.width = "0";
-                document.getElementById("kreska3").style.width = "0";
-               
+
             } else {
-                oferta.style.visibility = "visible";
-                oferta.style.height = "auto";
                 oferta.style.opacity = "1";
-                document.getElementById("kreska2").style.width = "70px";
-                document.getElementById("kreska3").style.width = "70px";
+                oferta.style.height = "auto";
+
+                document.getElementById("kreska2").style.width = "73px";
             }
         }
 
 
-       
+
 
 
 
@@ -408,12 +412,14 @@
         /* Close when someone clicks on the "x" symbol inside the overlay */
         function closeNav() {
             document.getElementById("myNav").style.width = "0%";
+            var oferta = document.querySelector("#overlay-oferta2");
             var elems = document.getElementsByClassName('icon-bar');
             for (var i = 0; i < elems.length; i += 1) {
                 elems[i].style.display = 'block';
             }
-            document.getElementById("overlay-oferta2").style.display = "none";
-
+            oferta.style.height = "0";
+            oferta.style.opacity = "0";
+            document.getElementById("kreska2").style.width = "0";
         }
 
         $(".carousel").swipe({

@@ -396,7 +396,7 @@ ul {
     margin: 0 auto;
     position: relative;
     height: 3px;
-    width: 70px;
+    width: 56px;
     background-color: red;
     bottom: 8px;
 }
@@ -408,12 +408,7 @@ ul {
     width: 0px;
 }
 
-#kreska3 {
 
-    left: 0;
-    transition: 0.3s;
-    width: 0px;
-}
 
 #overlay-oferta::after {
     display: inline-block;
@@ -428,22 +423,29 @@ ul {
     border-left: .3em solid transparent;
 }
 
+#kadra-padding {
+    padding-top: 2px;
+}
+
 #overlay-oferta2 {
     transition: opacity 0.3s ease-out;
     opacity: 0;
     margin: 0 auto;
-    width: 420px;
+    width: 100%;
     height: 0;
     overflow: hidden;
 }
 
+#overlay-oferta2 a {
+    font-size: 16px;
+}
 
 
 
 
 /* The navigation links inside the overlay */
 .overlay a {
-    padding: 8px;
+    padding: 8px 0 8px 0;
     text-decoration: none;
     font-size: 20px;
     color: #818181;
