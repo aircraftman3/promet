@@ -737,6 +737,14 @@ pixels, change the font-size of the links and position
     height: 400px;
 }
 
+.map-kontakt {
+    margin: auto;
+    width: 65%;
+    padding-bottom: 48px;
+
+
+}
+
 .footer {
     width: 100%;
     background-color: #1e1f20;
@@ -1088,6 +1096,9 @@ pixels, change the font-size of the links and position
         width: 100% !important;
     }
 
+    .map-kontakt {
+        width: 100%;
+    }
 }
 
 
@@ -1272,7 +1283,9 @@ pixels, change the font-size of the links and position
     .w-75 {
         width: 330px !important
     }
-
+    .map-kontakt {
+        width: 100%;
+    }
 
 }
 
@@ -1454,6 +1467,7 @@ pixels, change the font-size of the links and position
     .w-75 {
         width: 490px !important
     }
+
 }
 
 @media (min-width: 1199.99px) and (max-width: 1599px) {
