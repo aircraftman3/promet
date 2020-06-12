@@ -1,285 +1,292 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-            crossorigin="anonymous"></script>
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="parallax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<header>
-    <div class="top-bar">
-        <div class="top-bar-inner">
-            <div class="top-bar-inner-left">
-                <a href="#"><i class="fas fa-map-marker-alt fa-2x"></i></a>
-                <span>Łokietka 119, 82-300 Elbląg</span>
-            </div>
-            <ul class="social-media-icons">
-                <li><a href=""><i class="fab fa-facebook-square fa-2x"></i></a></li>
-                <li><a href="#"><i class="fab fa-google-plus-square fa-2x"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter-square fa-2x"></i></a></li>
-                <li><a href="#"><i class="fab fa-pinterest-square fa-2x"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="mid-bar">
-        <div class="mid-bar-inner">
-            <div class="mid-bar-inner-left">
-                <div>
-                    <a href="./index.html"><img class="mid-bar-inner-logo" src="./images/logo.gif" alt="logo"></a>
+    <header>
+        <div class="top-bar">
+            <div class="top-bar-inner">
+                <div class="top-bar-inner-left">
+                    <a href="#"><i class="fas fa-map-marker-alt fa-2x"></i></a>
+                    <span>Łokietka 119, 82-300 Elbląg</span>
                 </div>
-                <div>
-                    <p id="name-first-line">
-                        <a href="./index.html">Promet Service</a>
-                    </p>
-                    <p id="name-second-line">
-                        <a href="./index.html">Agencja Ochrony</a>
-                    </p>
-                </div>
-            </div>
-
-            <div class="mid-bar-inner-phone">
-                <a href="tel:+48556437722"><i class="fas fa-phone"></i> 55 643 77 22</a>
-            </div>
-        </div>
-    </div>
-    <div class="bottom-bar">
-        <div class="sticky-container">
-            <nav class="bottom-bar-inner" id="navbar">
-
-                <ul class="nav nav-pills navbar-border">
-                    <li class="nav-item">
-                        <a class="nav-link" id="first-menu-item" href="./o-firmie.html" role="button"
-                           aria-haspopup="true" aria-expanded="false">O firmie</a>
-                    </li>
-                                        <li class="nav-item">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="javascript:;" role="button"
-                           aria-haspopup="true" aria-expanded="false" data-flip="false">Oferta</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="javascript:;">Monitoring sygnałów alarmowych</a></li>
-                            <li><a class="dropdown-item" href="javascript:;">Monitoring wizyjny CCTV</a></li>
-                            <li><a class="dropdown-item" href="javascript:;">Monitoring pożarowy</a></li>
-                            <li><a class="dropdown-item" href="javascript:;">Ochrona fizyczna</a></li>
-                            <li><a class="dropdown-item" href="javascript:;">Konwojowanie</a></li>
-                            <li><a class="dropdown-item" href="javascript:;">Serwis i konserwacja</a></li>
-                            <li><a class="dropdown-item" href="javascript:;">Instalacje</a></li>
-                            <li><a class="dropdown-item" href="javascript:;">Projektowanie planów ochrony</a></li>
-                            <li><a class="dropdown-item" href="javascript:;">Kontrole dostępu</a></li>
-                            <li class="dropdown-submenu">
-                                <a class="dropdown-item" tabindex="-1" href="javascript:;">(Dodatkowe)</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item dropdown-item2" tabindex="-1" href="javascript:;">Sprzątanie</a>
-                                    </li>
-                                    <li><a class="dropdown-item dropdown-item2" tabindex="-1" href="javascript:;">Alpinizm</a>
-                                    </li>
-                                    <li><a class="dropdown-item dropdown-item2" tabindex="-1" href="javascript:;">Windsuring</a>
-                                    </li>
-                                </ul>
-                            </li>
-
-
-                        </ul>
-
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="kadra.html">Kadra</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="kariera.html">Kariera</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="last-menu-item" href="kontakt.html">Kontakt</a>
-                    </li>
+                <ul class="social-media-icons">
+                    <li><a href=""><i class="fab fa-facebook-square fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-plus-square fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fab fa-pinterest-square fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
                 </ul>
-                <div class="progress-container">
-                    <div class="progress-bar" id="myBar">
-
+            </div>
+        </div>
+        <div class="mid-bar">
+            <div class="mid-bar-inner">
+                <div class="mid-bar-inner-left">
+                    <div>
+                        <a href="./index.html"><img class="mid-bar-inner-logo" src="./images/logo.gif" alt="logo"></a>
+                    </div>
+                    <div>
+                        <p id="name-first-line">
+                            <a href="./index.html">Promet Service</a>
+                        </p>
+                        <p id="name-second-line">
+                            <a href="./index.html">Agencja Ochrony</a>
+                        </p>
                     </div>
                 </div>
-            </nav>
-        </div>
-        <!-- The overlay -->
-        <div id="myNav" class="overlay">
 
-            <!-- Button to close the overlay navigation -->
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-            <!-- Overlay content -->
-            <div class="overlay-content">
-                <a href="./index.html">Home</a>
-                <div class="kreska"></div>
-                <a href="./o-firmie.html">O firmie</a>
-                <a href="javascript:void(0)" id="overlay-oferta" onclick="openOferta()">Oferta</a>
-                <div class="kreska" id="kreska2"></div>
-                <div id="overlay-oferta2">
-                    <a href="">Monitoring sygnałów alarmowych</a>
-                    <a href="">Monitoring pożarowy</a>
-                    <a href="">Ochrona fizyczna</a>
-                    <a href="">Konwojowanie</a>
-                    <a href="">Serwis i konserwacja</a>
-                    <a href="">Instalacje</a>
-                    <a href="">Projektowanie planów ochrony</a>
-                    <a href="">Kontrole dostępu</a>
+                <div class="mid-bar-inner-phone">
+                    <a href="tel:+48556437722"><i class="fas fa-phone"></i> 55 643 77 22</a>
                 </div>
-
-                <a href="./kadra.html" id="kadra-padding">Kadra</a>
-                <a href="./kariera.html">Kariera</a>
-                <a href="./kontakt.html">Kontakt</a>
             </div>
-
         </div>
-        <div id="hamburger-outer" onclick="openNav()">
-            <span class="icon-bar"></span>
-            <span class="icon-bar last-two"></span>
-            <span class="icon-bar last-two"></span>
-            <!-- Use any element to open/show the overlay navigation menu -->
-            <!--            <span id="hamburger-menu" onclick="openNav()">&#9776</span>-->
-        </div>
-    </div>
-</header>
-<main>
-    <div class="section-main">
-        <div class="section-main-inner">
-            <h5>Kariera</h5>
-            <div class="section-main-view">
+        <div class="bottom-bar">
+            <div class="sticky-container">
+                <nav class="bottom-bar-inner" id="navbar">
 
-                <div class="section-main-view-text">
-                    <img class="img-fluid" id="img-kariera" src="./images/kariera.jpg" alt="">
-                    <h4>/*Test*/.Z ogromna przyjemnością chcielibyśmy Państwu zaproponować nawiązanie współpracy
-                        z agencją ochrony <span style="font-weight:bold">„PROMET-SERVICE” sp. z o.o. </span>w Elblągu w postaci monitorowania
-                        systemu sygnalizacji włamania Państwa obiektów połączonego z interwencja Grupy
-                        Patrolowo Interwencyjnej (GPI).</h4>
-                    <h4> Abonament zawiera: </h4>
-                    <ul>
-                        <li>całodobowe monitorowanie i odpowiednią reakcję na sygnały przychodzące z obiektu
-                            do Centrum Monitorowania „Promet-Service”</li>
-                        <li>interwencję GPI na sygnały włamania i zagrożenia przychodzące z obiektu</li>
-                        <li>informowanie Państwa o zaistniałych awariach, braku załączeń czuwania alarmu</li>
-                        <li>przyłączenie do Centrum Monitorowania „Promet-Service”</li>
-                        <li>rejestrację rozmów telefonicznych, które były prowadzone przez Centrum Monitorowania
-                            „Promet-Service” a Klientem w przedziale czasowym do 1 m-ca</li>
-                        <li>archiwizowanie sygnałów przychodzących z obiektów do 6 m-cy</li>
-                        <li>bezpłatną konserwację toru monitoringu</li>
-                        <li>w przypadku awarii systemu przystąpienie do jego naprawy w ciągu 12 godz.
-                            od chwili pisemnego zgłoszenia (dot. dni pracujących)</li>
+                    <ul class="nav nav-pills navbar-border">
+                        <li class="nav-item">
+                            <a class="nav-link" id="first-menu-item" href="./o-firmie.html" role="button"
+                                aria-haspopup="true" aria-expanded="false">O firmie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="javascript:;" role="button"
+                                aria-haspopup="true" aria-expanded="false" data-flip="false">Oferta</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="javascript:;">Monitoring sygnałów alarmowych</a></li>
+                                <li><a class="dropdown-item" href="javascript:;">Monitoring wizyjny CCTV</a></li>
+                                <li><a class="dropdown-item" href="javascript:;">Monitoring pożarowy</a></li>
+                                <li><a class="dropdown-item" href="javascript:;">Ochrona fizyczna</a></li>
+                                <li><a class="dropdown-item" href="javascript:;">Konwojowanie</a></li>
+                                <li><a class="dropdown-item" href="javascript:;">Serwis i konserwacja</a></li>
+                                <li><a class="dropdown-item" href="javascript:;">Instalacje</a></li>
+                                <li><a class="dropdown-item" href="javascript:;">Projektowanie planów ochrony</a></li>
+                                <li><a class="dropdown-item" href="javascript:;">Kontrole dostępu</a></li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item" tabindex="-1" href="javascript:;">(Dodatkowe)</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item dropdown-item2" tabindex="-1"
+                                                href="javascript:;">Sprzątanie</a>
+                                        </li>
+                                        <li><a class="dropdown-item dropdown-item2" tabindex="-1"
+                                                href="javascript:;">Alpinizm</a>
+                                        </li>
+                                        <li><a class="dropdown-item dropdown-item2" tabindex="-1"
+                                                href="javascript:;">Windsuring</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                            </ul>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kadra.html">Kadra</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="kariera.html">Kariera</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="last-menu-item" href="kontakt.html">Kontakt</a>
+                        </li>
                     </ul>
-                    <p>Serdecznie zapraszamy do skorzystania z naszej oferty, <span style="font-weight: bold">zaufaj profesjonalistom./*Test*/</span></p>
+                    <div class="progress-container">
+                        <div class="progress-bar" id="myBar">
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- The overlay -->
+            <div id="myNav" class="overlay">
+
+                <!-- Button to close the overlay navigation -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <!-- Overlay content -->
+                <div class="overlay-content">
+                    <a href="./index.html">Home</a>
+                    <div class="kreska"></div>
+                    <a href="./o-firmie.html">O firmie</a>
+                    <a href="javascript:void(0)" id="overlay-oferta" onclick="openOferta()">Oferta</a>
+                    <div class="kreska" id="kreska2"></div>
+                    <div id="overlay-oferta2">
+                        <a href="">Monitoring sygnałów alarmowych</a>
+                        <a href="">Monitoring pożarowy</a>
+                        <a href="">Ochrona fizyczna</a>
+                        <a href="">Konwojowanie</a>
+                        <a href="">Serwis i konserwacja</a>
+                        <a href="">Instalacje</a>
+                        <a href="">Projektowanie planów ochrony</a>
+                        <a href="">Kontrole dostępu</a>
+                    </div>
+
+                    <a href="./kadra.html" id="kadra-padding">Kadra</a>
+                    <a href="./kariera.html">Kariera</a>
+                    <a href="./kontakt.html">Kontakt</a>
+                </div>
+
+            </div>
+            <div id="hamburger-outer" onclick="openNav()">
+                <span class="icon-bar"></span>
+                <span class="icon-bar last-two"></span>
+                <span class="icon-bar last-two"></span>
+                <!-- Use any element to open/show the overlay navigation menu -->
+                <!--            <span id="hamburger-menu" onclick="openNav()">&#9776</span>-->
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="section-main">
+            <div class="section-main-inner">
+                <h5>Kariera</h5>
+                <div class="section-main-view">
+
+                    <div class="section-main-view-text">
+                        <img class="img-fluid" id="img-kariera" src="./images/kariera.jpg" alt="">
+                        <h4>/*Test*/.Z ogromna przyjemnością chcielibyśmy Państwu zaproponować nawiązanie współpracy
+                            z agencją ochrony <span style="font-weight:bold">„PROMET-SERVICE” sp. z o.o. </span>w
+                            Elblągu w postaci monitorowania
+                            systemu sygnalizacji włamania Państwa obiektów połączonego z interwencja Grupy
+                            Patrolowo Interwencyjnej (GPI).</h4>
+                        <h4> Abonament zawiera: </h4>
+                        <ul>
+                            <li>całodobowe monitorowanie i odpowiednią reakcję na sygnały przychodzące z obiektu
+                                do Centrum Monitorowania „Promet-Service”</li>
+                            <li>interwencję GPI na sygnały włamania i zagrożenia przychodzące z obiektu</li>
+                            <li>informowanie Państwa o zaistniałych awariach, braku załączeń czuwania alarmu</li>
+                            <li>przyłączenie do Centrum Monitorowania „Promet-Service”</li>
+                            <li>rejestrację rozmów telefonicznych, które były prowadzone przez Centrum Monitorowania
+                                „Promet-Service” a Klientem w przedziale czasowym do 1 m-ca</li>
+                            <li>archiwizowanie sygnałów przychodzących z obiektów do 6 m-cy</li>
+                            <li>bezpłatną konserwację toru monitoringu</li>
+                            <li>w przypadku awarii systemu przystąpienie do jego naprawy w ciągu 12 godz.
+                                od chwili pisemnego zgłoszenia (dot. dni pracujących)</li>
+                        </ul>
+                        <p>Serdecznie zapraszamy do skorzystania z naszej oferty, <span style="font-weight: bold">zaufaj
+                                profesjonalistom./*Test*/</span></p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</main>
-<footer>
-    <div class="footer">
-        <div class="footer-inner">
-            <div class="footer-container">
-                <ul class="footer-text">
-                    <li><span style="color: #999999">Firma:</span> PROMET-SERVICE Sp. zo.o.</li>
-                    <li><span style="color: #999999">Adres:</span> 82-300 Elbląg, ul.Łokietka 119</li>
-                    <li><span style="color: #999999">Tel:</span> (55) 643 77 22</li>
-                    <li><span style="color: #999999">Tel/fax:</span> (55) 643 77 33</li>
-                    <li><span style="color: #999999">Telefon 24 h:</span> (55) 643 77 77</li>
-                    <li><span style="color: #999999">E-mail:</span> biuro@promet.elblag.pl</li>
-                    <li><span style="color: #999999">NIP:</span> 578 000 30 56</li>
-                </ul>
-                <p class="footer-text2">© 2018 PROMET-SERVICE Agencja ochrony Sp.z o.o.</p>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-inner">
+                <div class="footer-container">
+                    <ul class="footer-text">
+                        <li><span style="color: #999999">Firma:</span> PROMET-SERVICE Sp. zo.o.</li>
+                        <li><span style="color: #999999">Adres:</span> 82-300 Elbląg, ul.Łokietka 119</li>
+                        <li><span style="color: #999999">Tel:</span> (55) 643 77 22</li>
+                        <li><span style="color: #999999">Tel/fax:</span> (55) 643 77 33</li>
+                        <li><span style="color: #999999">Telefon 24 h:</span> (55) 643 77 77</li>
+                        <li><span style="color: #999999">E-mail:</span> biuro@promet.elblag.pl</li>
+                        <li><span style="color: #999999">NIP:</span> 578 000 30 56</li>
+                    </ul>
+                    <p class="footer-text2">© 2018 PROMET-SERVICE Agencja ochrony Sp.z o.o.</p>
+
+                </div>
+                <div class="footer-image">
+                    <img src="./images/footer-logo.jpg" alt="">
+                </div>
+
 
             </div>
-            <div class="footer-image">
-                <img src="./images/footer-logo.jpg" alt="">
-            </div>
-
-
         </div>
-    </div>
-</footer>
-<script>
-  // When the user scrolls the page, execute myFunction
-  window.onscroll = function () {
-    myFunction()
-  };
+    </footer>
+    <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function () {
+            myFunction()
+        };
 
-  // ===== Scroll to Top ====
-  $(window).scroll(function () {
-    if ($(this).scrollTop() >= 290) {        // If page is scrolled more than 50px
-      $('#return-to-top').fadeIn(250);    // Fade in the arrow
-    } else {
-      $('#return-to-top').fadeOut(250);   // Else fade out the arrow
-    }
-  });
-  $('#return-to-top').click(function () {      // When arrow is clicked
-    $('body,html').animate({
-      scrollTop: 0                       // Scroll to top of body
-    }, 500);
-  });
-
-
-  // Get the navbar
-  var navbar = document.getElementById("navbar");
-
-  // Get the offset position of the navbar
-  var sticky = navbar.offsetTop;
-
-  // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-  function myFunction() {
-    if (window.pageYOffset >= sticky) {
-      navbar.classList.add("sticky")
-    } else {
-      navbar.classList.remove("sticky");
-    }
-  }
+        // ===== Scroll to Top ====
+        $(window).scroll(function () {
+            if ($(this).scrollTop() >= 290) {        // If page is scrolled more than 50px
+                $('#return-to-top').fadeIn(250);    // Fade in the arrow
+            } else {
+                $('#return-to-top').fadeOut(250);   // Else fade out the arrow
+            }
+        });
+        $('#return-to-top').click(function () {      // When arrow is clicked
+            $('body,html').animate({
+                scrollTop: 0                       // Scroll to top of body
+            }, 500);
+        });
 
 
-  $(".dropdown-toggle").on("mouseenter", function () {
-    // make sure it is not shown:
-    if (!$(this).parent().hasClass("show")) {
-      $(this).click();
-    }
-  });
-  $(".nav-item, .dropdown").on("mouseleave", function () {
-    // make sure it is shown:
-    if ($(this).hasClass("show")) {
-      $(this).children('.dropdown-toggle').first().click();
-    }
-  });
+        // Get the navbar
+        var navbar = document.getElementById("navbar");
 
-  $('.section4').parallax({imageSrc: './images/background.jpeg'});
-  $('header').parallax({imageSrc: './images/back2.jpg'});
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
 
-  /* Open when someone clicks on the span element */
-  function openNav() {
-    document.getElementById("myNav").style.width = "100%";
-    var elems = document.getElementsByClassName('icon-bar');
-    for (var i = 0; i < elems.length; i += 1) {
-      elems[i].style.display = 'none';
-    }
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
 
-  }
 
-  /* Close when someone clicks on the "x" symbol inside the overlay */
-  function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
-    var elems = document.getElementsByClassName('icon-bar');
-    for (var i = 0; i < elems.length; i += 1) {
-      elems[i].style.display = 'block';
-    }
-  }
-</script>
+        $(".dropdown-toggle").on("mouseenter", function () {
+            // make sure it is not shown:
+            if (!$(this).parent().hasClass("show")) {
+                $(this).click();
+            }
+        });
+        $(".nav-item, .dropdown").on("mouseleave", function () {
+            // make sure it is shown:
+            if ($(this).hasClass("show")) {
+                $(this).children('.dropdown-toggle').first().click();
+            }
+        });
+
+        $('.section4').parallax({ imageSrc: './images/background.jpeg' });
+        $('header').parallax({ imageSrc: './images/back2.jpg' });
+
+        /* Open when someone clicks on the span element */
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+            var elems = document.getElementsByClassName('icon-bar');
+            for (var i = 0; i < elems.length; i += 1) {
+                elems[i].style.display = 'none';
+            }
+            document.body.style.position = "fixed";
+        }
+
+        /* Close when someone clicks on the "x" symbol inside the overlay */
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+            var elems = document.getElementsByClassName('icon-bar');
+            for (var i = 0; i < elems.length; i += 1) {
+                elems[i].style.display = 'block';
+            }
+        }
+    </script>
 </body>
+
 </html>
