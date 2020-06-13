@@ -331,47 +331,19 @@
                 navbar.classList.remove("sticky");
             }
         }
-        // function openOferta() {         
-
-        //     var oferta = document.querySelector("#overlay-oferta2");
-
-        //     if (oferta.style.visibility === "visible") {
-        //         oferta.style.visibility = "hidden";
-        //         oferta.style.height = "0";
-        //         oferta.style.opacity = "0";
-        //         document.getElementById("kreska2").style.width = "0";
-
-        //     } else {
-        //         oferta.style.visibility = "visible";
-        //         oferta.style.height = "auto";
-        //         oferta.style.opacity = "1";
-        //         document.getElementById("kreska2").style.width = "73px";
-        //     }
-        // }
 
         function openOferta() {
-
             var oferta = document.querySelector("#overlay-oferta2");
-
             if (oferta.style.opacity === "1") {
-
                 oferta.style.height = "0";
                 oferta.style.opacity = "0";
                 document.getElementById("kreska2").style.width = "0";
-
             } else {
                 oferta.style.opacity = "1";
                 oferta.style.height = "auto";
-
                 document.getElementById("kreska2").style.width = "73px";
             }
         }
-
-
-
-
-
-
 
         function myFunction2() {
             var winScroll = document.body.scrollTop || document.documentElement.scrollTop;

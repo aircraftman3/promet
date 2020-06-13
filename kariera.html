@@ -251,6 +251,18 @@
             }
         }
 
+        function openOferta() {
+            var oferta = document.querySelector("#overlay-oferta2");
+            if (oferta.style.opacity === "1") {
+                oferta.style.height = "0";
+                oferta.style.opacity = "0";
+                document.getElementById("kreska2").style.width = "0";
+            } else {
+                oferta.style.opacity = "1";
+                oferta.style.height = "auto";
+                document.getElementById("kreska2").style.width = "73px";
+            }
+        }
 
         $(".dropdown-toggle").on("mouseenter", function () {
             // make sure it is not shown:
