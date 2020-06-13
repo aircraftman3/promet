@@ -1327,6 +1327,9 @@ pixels, change the font-size of the links and position
         height: 60px;
     }
 
+    .hamburger-container {
+        display: none;
+    }
 
     .section2-image {
         max-width: 45%;
@@ -1471,6 +1474,9 @@ pixels, change the font-size of the links and position
         opacity: 0.9;
     }
 
+    .hamburger-container {
+        display: none;
+    }
     .section-main-inner {
         max-width: 96%;
 
@@ -1500,6 +1506,9 @@ pixels, change the font-size of the links and position
         margin-bottom: 2rem;
     }
 
+.hamburger-container {
+        display: none;
+    }
     #section2-image4 ul {
         margin-bottom: 3rem;
     }
@@ -1514,7 +1523,10 @@ pixels, change the font-size of the links and position
         max-width: 1480px;
 
     }
-
+.hamburger-container {
+        display: none;
+    }
+    
     .section2-image {
         max-width: 349px;
     }
