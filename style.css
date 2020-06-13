@@ -327,7 +327,6 @@ ul {
     border-right-style: none;
 }
 
-#first-menu-item {}
 
 .dropdown-item {
     font-size: 15px;
@@ -519,6 +518,8 @@ pixels, change the font-size of the links and position
 }
 
 .hamburger-container {
+    background-color: #212529;
+    height: 50px;
     transition: width 2s;
 }
 

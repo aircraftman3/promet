@@ -334,12 +334,13 @@
         }
 
         var hamburger = document.getElementById("hamburger-outer");
+        /* document.getElementById("hamburger-outer").offsetTop */
         function myFunction3() {
-            if (window.pageYOffset >= 273) {
+            if (window.pageYOffset > (document.querySelector(".hamburger-container").offsetTop - 5)) {
                 hamburger.classList.add("sticky2");
             } else {
                 hamburger.classList.remove("sticky2");
-
+               
             }
         }
 
