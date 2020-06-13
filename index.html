@@ -333,14 +333,13 @@
             }
         }
 
-        var hamburger = document.getElementById("hamburger-outer");
-        /* document.getElementById("hamburger-outer").offsetTop */
+        
         function myFunction3() {
+            var hamburger = document.getElementById("hamburger-outer");
             if (window.pageYOffset > (document.querySelector(".hamburger-container").offsetTop - 5)) {
                 hamburger.classList.add("sticky2");
             } else {
                 hamburger.classList.remove("sticky2");
-               
             }
         }
 
@@ -388,14 +387,13 @@
 
         /* Open when someone clicks on the span element */
         function openNav() {
-            
+
             document.getElementById("myNav").style.width = "100%";
             var elems = document.getElementsByClassName('icon-bar');
             for (var i = 0; i < elems.length; i += 1) {
                 elems[i].style.display = 'none';
             }
             document.body.classList.add("lock-scroll");
-            
         }
 
         /* Close when someone clicks on the "x" symbol inside the overlay */
@@ -412,7 +410,6 @@
             oferta.style.opacity = "0";
             document.getElementById("kreska2").style.width = "0";
             document.body.classList.remove("lock-scroll");
-
         }
 
         $(".carousel").swipe({
