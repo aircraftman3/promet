@@ -510,7 +510,7 @@ pixels, change the font-size of the links and position
 /*}*/
 
 #hamburger-outer {
-    transition: width 0.5s;
+    transition: width 0.4s;
     width: 100%;
     display: none;
     background-color: darkred;

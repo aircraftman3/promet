@@ -336,7 +336,7 @@
         var hamburger = document.getElementById("hamburger-outer");
         function myFunction3() {
             if (window.pageYOffset >= 273) {
-                hamburger.classList.add("sticky2")
+                hamburger.classList.add("sticky2");
             } else {
                 hamburger.classList.remove("sticky2");
 
@@ -393,7 +393,7 @@
             for (var i = 0; i < elems.length; i += 1) {
                 elems[i].style.display = 'none';
             }
-            
+            document.body.classList.add("lock-scroll");
             
         }
 
@@ -410,7 +410,8 @@
             oferta.style.height = "0";
             oferta.style.opacity = "0";
             document.getElementById("kreska2").style.width = "0";
-            document.body.style.position = "static";
+            document.body.classList.remove("lock-scroll");
+
         }
 
         $(".carousel").swipe({
