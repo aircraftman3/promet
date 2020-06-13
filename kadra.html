@@ -311,10 +311,17 @@
         /* Close when someone clicks on the "x" symbol inside the overlay */
         function closeNav() {
             document.getElementById("myNav").style.width = "0%";
+            var oferta = document.querySelector("#overlay-oferta2");
             var elems = document.getElementsByClassName('icon-bar');
             for (var i = 0; i < elems.length; i += 1) {
                 elems[i].style.display = 'block';
             }
+            /*this line closes "oferta" menu when the mobile menu closes*/
+            /*it prevents leaving Oferta menu open when reenter mobile menu*/
+            oferta.style.height = "0";
+            oferta.style.opacity = "0";
+            document.getElementById("kreska2").style.width = "0";
+            document.body.style.position = "static";
         }
     </script>
 </body>
