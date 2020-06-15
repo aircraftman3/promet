@@ -494,6 +494,7 @@ pixels, change the font-size of the links and position
 }
 
 .lock-scroll {
+    height: 100%;
     overflow: hidden;
 }
 
