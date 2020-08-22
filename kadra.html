@@ -3,27 +3,29 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    <title>Kadra</title>
+    <script src="jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="parallax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    <script src="popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    <script src="bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    <script src="jquery.touchSwipe.min.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
         integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
+        <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
         <div class="top-bar">
             <div class="top-bar-inner">
                 <div class="top-bar-inner-left">
@@ -43,7 +45,7 @@
             <div class="mid-bar-inner">
                 <div class="mid-bar-inner-left">
                     <div>
-                        <a href="./index.html"><img class="mid-bar-inner-logo" src="./images/logo.gif" alt="logo"></a>
+                        <a href="./index.html"><img class="mid-bar-inner-logo" src="./images/logo.svg" alt="Promet Service logo"></a>
                     </div>
                     <div>
                         <p id="name-first-line">
@@ -56,7 +58,7 @@
                 </div>
 
                 <div class="mid-bar-inner-phone">
-                    <a href="tel:+48556437722"><i class="fas fa-phone"></i> 55 643 77 22</a>
+                    <a href="tel:+48556437722"><i class="fas fa-phone"></i> 55 643 77 77</a>
                 </div>
             </div>
         </div>
@@ -111,11 +113,6 @@
                             <a class="nav-link" id="last-menu-item" href="kontakt.html">Kontakt</a>
                         </li>
                     </ul>
-                    <div class="progress-container">
-                        <div class="progress-bar" id="myBar">
-
-                        </div>
-                    </div>
                 </nav>
             </div>
             <!-- The overlay -->
@@ -306,8 +303,7 @@
             }
         });
 
-        $('.section4').parallax({ imageSrc: './images/background.jpeg' });
-        $('header').parallax({ imageSrc: './images/back2.jpg' });
+        $('header').parallax({ imageSrc: './images/header-background.jpg' });
 
         /* Open when someone clicks on the span element */
         function openNav() {
