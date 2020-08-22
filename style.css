@@ -16,6 +16,9 @@ ul {
 }
 
 
+
+
+
 #return-to-top {
     position: fixed;
     bottom: 20px;
@@ -596,7 +599,7 @@ pixels, change the font-size of the links and position
 .section2-image {
     box-shadow: 4px 11px 12px 0px rgba(0, 0, 0, 0.62);
     font-size: 12px;
-    max-height: 450px;
+    max-height: 100%;
     max-width: 30%;
     border-radius: 4px;
     border: lightgrey solid 1px;
@@ -639,6 +642,10 @@ pixels, change the font-size of the links and position
     color: dimgrey;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.p-and-ul-alignment {
+height: 110px;
 }
 
 .section2-image a {
@@ -923,6 +930,10 @@ pixels, change the font-size of the links and position
         background: rgba(0, 0, 0, 0.4);
     }
 
+    .p-and-ul-alignment {
+        height: 160px;
+    }
+
     .sticky-container {
         display: none;
     }
@@ -1141,6 +1152,10 @@ pixels, change the font-size of the links and position
         background: rgba(0, 0, 0, 0.4);
     }
 
+    .p-and-ul-alignment {
+        height: 215px;
+    }
+
     .sticky-container {
         display: none;
     }
@@ -1211,7 +1226,7 @@ pixels, change the font-size of the links and position
     }
 
     #section2-image4 ul {
-        margin-bottom: 3rem;
+        margin-bottom: 16px;
     }
 
     .section2-images {
@@ -1500,14 +1515,13 @@ pixels, change the font-size of the links and position
 @media (min-width: 991.99px) and (max-width: 1199.98px) {
     .section2-image {
         max-width: 34%;
+        margin-bottom: 20px;
     }
 
-    #section2-image1 {
-        margin-bottom: 40px;
-    }
+    
 
     #section2-image4 ul {
-        margin-bottom: 2rem;
+        margin-bottom: 16px;
     }
 
     .section4-text {
@@ -1543,12 +1557,16 @@ pixels, change the font-size of the links and position
         max-width: 24%;
     }
 
-    #section2-image1 p {
+    /* #section2-image1 p {
         margin-bottom: 2rem;
-    }
+    } */
 
-    #section2-image3 p {
+    /* #section2-image3 p {
         margin-bottom: 2rem;
+    } */
+
+    .p-and-ul-alignment {
+        height: 142px;
     }
 
     .hamburger-container {
@@ -1556,7 +1574,7 @@ pixels, change the font-size of the links and position
     }
 
     #section2-image4 ul {
-        margin-bottom: 3rem;
+        margin-bottom: 16px;
     }
 
     .w-75 {
@@ -1579,7 +1597,7 @@ pixels, change the font-size of the links and position
     }
 
     #section2-image4 ul {
-        margin-bottom: 2rem;
+        margin-bottom: 16px;
     }
 
     .w-75 {
