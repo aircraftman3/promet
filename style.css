@@ -109,7 +109,16 @@ ul {
     color: #515151;
 }
 
+.social-media-icons img {
+    color: #515151;
+   height: 30px;
+   width: 34px;
+}
+
 .social-media-icons a:hover {
+    color: #af0000;
+}
+.social-media-icons img:hover {
     color: #af0000;
 }
 
