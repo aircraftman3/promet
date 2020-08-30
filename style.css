@@ -953,11 +953,11 @@ height: 110px;
     }
 
     #name-first-line {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     #name-second-line {
-        font-size: 15px;
+        font-size: 17px;
 
     }
 
@@ -966,6 +966,10 @@ height: 110px;
         background-image: url(./images/back4.jpg);
         background-size: cover;
         background-position: center;
+    }
+
+    .mid-bar-inner {
+        width: 97%;
     }
 
     .mid-bar-inner-phone {
