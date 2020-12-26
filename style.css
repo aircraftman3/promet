@@ -66,7 +66,7 @@ ul {
 .progress-container {
     width: 100%;
     height: 5px;
-    background: #ccc;
+    background: black;
 }
 
 .progress-bar {
@@ -111,13 +111,14 @@ ul {
 
 .social-media-icons img {
     color: #515151;
-   height: 30px;
-   width: 34px;
+    height: 30px;
+    width: 34px;
 }
 
 .social-media-icons a:hover {
     color: #af0000;
 }
+
 .social-media-icons img:hover {
     color: #af0000;
 }
@@ -147,7 +148,7 @@ ul {
 /*mid bar**********************************/
 
 .mid-bar {
-    
+
     width: 100%;
 
 }
@@ -466,7 +467,7 @@ ul {
     padding: 8px 0 8px 0;
     text-decoration: none;
     font-size: 20px;
-    
+
     color: #c7c3c3;
     display: block;
     /* Display block instead of inline */
@@ -596,6 +597,7 @@ pixels, change the font-size of the links and position
 }
 
 .section2-images {
+
     padding-bottom: 20px;
     padding-top: 20px;
     display: flex;
@@ -603,6 +605,7 @@ pixels, change the font-size of the links and position
     flex-wrap: wrap;
 
 }
+
 
 .section2-image {
     box-shadow: 4px 11px 12px 0px rgba(0, 0, 0, 0.62);
@@ -616,6 +619,7 @@ pixels, change the font-size of the links and position
     opacity: 0.5;
     transition: all .3s ease-in-out;
 }
+
 
 #section2-image1:hover {
     opacity: 1;
@@ -653,7 +657,7 @@ pixels, change the font-size of the links and position
 }
 
 .p-and-ul-alignment {
-height: 110px;
+    height: 110px;
 }
 
 .section2-image a {
@@ -986,7 +990,7 @@ height: 110px;
         padding-bottom: 10px;
     }
 
-    
+
 
 
     .section2-image {
@@ -1061,7 +1065,7 @@ height: 110px;
         font-size: 14px;
     }
 
-    
+
 
 
 
@@ -1380,7 +1384,7 @@ height: 110px;
         display: none;
     }
 
-    
+
 
     .section2-image {
         max-width: 45%;
@@ -1531,7 +1535,7 @@ height: 110px;
         margin-bottom: 20px;
     }
 
-    
+
 
     #section2-image4 ul {
         margin-bottom: 16px;
