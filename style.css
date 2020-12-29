@@ -347,7 +347,6 @@ ul {
     background-color: white;
     padding-top: 12px;
     padding-bottom: 12px;
-    width: 34vw;
 }
 
 .nav-pills .nav-link.active,
@@ -1362,6 +1361,8 @@ pixels, change the font-size of the links and position
 /*!*Medium devices (tablets, 768px and up)*!*/
 @media (min-width: 767.01px) and (max-width: 991.98px) {
 
+
+
     .mid-bar {
         background-image: url(./images/back4-mid-res.jpg);
         background-size: cover;
@@ -1522,11 +1523,18 @@ pixels, change the font-size of the links and position
     .w-75 {
         width: 490px !important
     }
+
+    .dropdown-item {
+        width: 400px;
+    }
 }
 
-
-
-
+@media screen and (min-width: 767.01px) and (max-width: 991.98px) and (orientation: landscape) {
+    .dropdown-item {
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+}
 
 /*!*Large devices (desktops, 992px and up)*!*/
 @media (min-width: 991.99px) and (max-width: 1199.98px) {
@@ -1535,7 +1543,9 @@ pixels, change the font-size of the links and position
         margin-bottom: 20px;
     }
 
-
+    .dropdown-item {
+        width: 454px;
+    }
 
     #section2-image4 ul {
         margin-bottom: 16px;
@@ -1597,12 +1607,20 @@ pixels, change the font-size of the links and position
     .w-75 {
         width: 490px !important
     }
+
+    .dropdown-item {
+        width: 454px;
+    }
 }
 
 @media (min-width: 1600px) {
     .section2-inner {
         max-width: 1480px;
 
+    }
+
+    .dropdown-item {
+        width: 454px;
     }
 
     .hamburger-container {
