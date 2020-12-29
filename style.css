@@ -1130,6 +1130,12 @@ pixels, change the font-size of the links and position
 
     .section-main-view-text img {
         margin-bottom: 25px;
+        transition: none;
+        animation: FadeIn 4s ease-in-out forwards;
+    }
+
+    .section-main-view-text img:hover {
+        transform: none;
     }
 
     .section-main-view-text li {
@@ -1157,6 +1163,16 @@ pixels, change the font-size of the links and position
 
     .map-kontakt {
         width: 100%;
+    }
+}
+
+@keyframes FadeIn {
+    from {
+        filter: grayscale(100%);
+    }
+
+    to {
+        filter: none;
     }
 }
 
@@ -1331,7 +1347,14 @@ pixels, change the font-size of the links and position
         float: none;
         max-height: 210px;
         max-width: 373px;
+        transition: none;
+        animation: FadeIn 4s ease-in-out forwards;
     }
+
+    .section-main-view-text img:hover {
+        transform: none;
+    }
+
 
     /* #img-kariera {
         max-height: 145px;
@@ -1512,7 +1535,20 @@ pixels, change the font-size of the links and position
     .section-main-view-text img {
         max-height: 200px;
         max-width: 356px;
+        transition: none;
+        animation: FadeIn 4s ease-in-out forwards;
     }
+
+
+
+
+    .section-main-view-text img:hover {
+        transform: none;
+    }
+
+
+
+
 
     .section-main-inner h5 {
         font-size: 30px;
