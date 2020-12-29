@@ -1360,7 +1360,7 @@ pixels, change the font-size of the links and position
 }
 
 /*!*Medium devices (tablets, 768px and up)*!*/
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 767.01px) and (max-width: 991.98px) {
 
     .mid-bar {
         background-image: url(./images/back4-mid-res.jpg);
